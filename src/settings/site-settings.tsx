@@ -17,7 +17,7 @@ export const siteSettings = {
     alt: "Paintigo",
     href: "/",
     width: 200,
-    height: 90,
+    height: 70,
   },
   defaultLanguage: "en",
   currencyCode: "USD",
@@ -105,7 +105,7 @@ export const siteSettings = {
                     path: "",
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/1.webp",
+                        imgSrc: "/assets/images/mega-menu/1.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },
@@ -129,7 +129,7 @@ export const siteSettings = {
                     path: "",
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/2.webp",
+                        imgSrc: "/assets/images/mega-menu/2.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },
@@ -291,7 +291,7 @@ export const siteSettings = {
                     path: "",
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/3.avif",
+                        imgSrc: "/assets/images/mega-menu/3.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },
@@ -378,7 +378,7 @@ export const siteSettings = {
                     path: "",
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/4.jpg",
+                        imgSrc: "/assets/images/mega-menu/5.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },
@@ -441,7 +441,7 @@ export const siteSettings = {
                     path: "",
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/5.avif",
+                        imgSrc: "/assets/images/mega-menu/6.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },
@@ -465,7 +465,7 @@ export const siteSettings = {
                     path: "",
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/6.avif",
+                        imgSrc: "/assets/images/mega-menu/7.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },

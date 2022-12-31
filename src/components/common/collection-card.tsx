@@ -73,7 +73,7 @@ const CollectionCard: React.FC<Props> = ({
         <div className={contactClassName}>
           <Text
             variant='mediumHeading'
-            className='mb-1.5 lg:mb-2.5 2xl:mb-3 3xl:mb-3.5'
+            className='mb-1.5 lg:mb-2.5 2xl:mb-3 3xl:mb-3.5 text-[#262626]'
           >
             {t(`${title}`)}
           </Text>
