@@ -528,7 +528,7 @@ export const siteSettings = {
                     path: "",
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/7.jpg",
+                        imgSrc: "/assets/images/mega-menu/8.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },
@@ -552,7 +552,7 @@ export const siteSettings = {
                     path: "",
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/8.jpg",
+                        imgSrc: "/assets/images/mega-menu/9.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },
@@ -645,7 +645,7 @@ export const siteSettings = {
 
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/9.avif",
+                        imgSrc: "/assets/images/mega-menu/10.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },
@@ -708,7 +708,7 @@ export const siteSettings = {
                     path: "",
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/10.jpg",
+                        imgSrc: "/assets/images/mega-menu/11.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },
@@ -732,7 +732,7 @@ export const siteSettings = {
                     path: "",
                     img: [
                       {
-                        imgSrc: "/assets/images/mega-menu/11.jpg",
+                        imgSrc: "/assets/images/mega-menu/12.jpg",
                         imgWidth: 300,
                         imgHeight: 220,
                       },
