@@ -17,7 +17,7 @@ export const siteSettings = {
     alt: "Paintigo",
     href: "/",
     width: 200,
-    height: 70,
+    height: 60,
   },
   defaultLanguage: "en",
   currencyCode: "USD",
