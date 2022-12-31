@@ -389,9 +389,9 @@
 }
 
 /* Breadcrumb truncate last child */
-.chawkbazarBreadcrumb li:last-child {
+/* .chawkbazarBreadcrumb li:last-child {
   @apply truncate;
-}
+} */
 
 @layer utilities {
   /* Chrome, Safari and Opera */
