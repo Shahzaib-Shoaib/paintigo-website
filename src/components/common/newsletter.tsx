@@ -62,7 +62,7 @@ if (response.data.customerCreate?.customerUserErrors) {
               src="/assets/images/newsletter.jpg"
               alt="Thumbnail"
               width={600} // 655
-              height={600} // 655
+              height={620} // 655
               className="object-cover w-full h-full"
             />
           </div>
