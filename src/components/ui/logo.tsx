@@ -13,13 +13,13 @@ const Logo: React.FC<React.AnchorHTMLAttributes<{}>> = ({
 			className={cn("inline-flex focus:outline-none", className)}
 			{...props}
 		>
-			<Image
+			{/* <Image
 				src={siteSettings.logo.url}
 				alt={siteSettings.logo.alt}
 				height={siteSettings.logo.height}
 				width={siteSettings.logo.width}
 				loading="eager"
-			/>
+			/> */}
 		</Link>
 	);
 };

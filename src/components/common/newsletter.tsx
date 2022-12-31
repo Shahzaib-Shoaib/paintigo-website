@@ -59,7 +59,7 @@ if (response.data.customerCreate?.customerUserErrors) {
         <div className="flex items-center">
           <div className="flex-shrink-0 items-center justify-center bg-gray-200 hidden lg:flex lg:w-[520px] xl:w-auto">
             <Image
-              src="/assets/images/newsletter.jpg"
+              src="/assets/images/newsletter2.jpg"
               alt="Thumbnail"
               width={600} // 655
               height={620} // 655
