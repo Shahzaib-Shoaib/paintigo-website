@@ -782,6 +782,16 @@ export const siteSettings = {
           },
         ],
       },
+      {
+        id: 13,
+        path: "/refund-policy",
+        label: "text-refund-policy",
+      },
+      {
+        id: 14,
+        path: "/return-policy",
+        label: "text-return-policy",
+      },
     ],
     mobileMenu: [
       // {
@@ -962,6 +972,16 @@ export const siteSettings = {
             label: "text-amazon-uk",
           },
         ],
+      },
+      {
+        id: 13,
+        path: "/refund-policy",
+        label: "text-refund-policy",
+      },
+      {
+        id: 14,
+        path: "/return-policy",
+        label: "text-return-policy",
       },
     ],
     languageMenu: [
