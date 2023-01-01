@@ -765,6 +765,11 @@ export const siteSettings = {
         path: "/contact-us",
         label: "text-contact-us",
       },
+      {
+        id: 12,
+        path: "/",
+        label: "text-amazon",
+      },
     ],
     mobileMenu: [
       // {
@@ -929,6 +934,13 @@ export const siteSettings = {
         path: "/contact-us",
         label: "text-contact-us",
       },
+      {
+        id: 12,
+        path: "/",
+        label: "text-amazon",
+        subMenu:[{}]
+      },
+      
     ],
     languageMenu: [
       {
