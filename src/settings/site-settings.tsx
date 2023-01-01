@@ -769,6 +769,18 @@ export const siteSettings = {
         id: 12,
         path: "/",
         label: "text-amazon",
+        subMenu: [
+          {
+            id: 2,
+            path: "https://www.amazon.com/stores/Paintigo/Homepage/page/AF111FC8-5FD9-4249-A960-58749715DBE6",
+            label: "text-amazon-global",
+          },
+          {
+            id: 3,
+            path: "https://www.amazon.co.uk/stores/PAINTIGO/Homepage/page/48CC385B-F8FF-4376-AAB1-E26C16076F44",
+            label: "text-amazon-uk",
+          },
+        ],
       },
     ],
     mobileMenu: [
@@ -938,9 +950,19 @@ export const siteSettings = {
         id: 12,
         path: "/",
         label: "text-amazon",
-        subMenu:[{}]
+        subMenu: [
+          {
+            id: 1,
+            path: "https://www.amazon.com/stores/Paintigo/Homepage/page/AF111FC8-5FD9-4249-A960-58749715DBE6",
+            label: "text-amazon-global",
+          },
+          {
+            id: 2,
+            path: "https://www.amazon.co.uk/stores/PAINTIGO/Homepage/page/48CC385B-F8FF-4376-AAB1-E26C16076F44",
+            label: "text-amazon-uk",
+          },
+        ],
       },
-      
     ],
     languageMenu: [
       {
