@@ -13,6 +13,7 @@ const Logo: React.FC<React.AnchorHTMLAttributes<{}>> = ({
 			className={cn("inline-flex focus:outline-none", className)}
 			{...props}
 		>
+			<h1 className="text-white text-xl font-satisfy">Paintigo</h1>
 			{/* <Image
 				src={siteSettings.logo.url}
 				alt={siteSettings.logo.alt}

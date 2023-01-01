@@ -19,28 +19,28 @@ import {
 const social = [
 	{
 		id: 0,
-		link: "https://www.facebook.com/redqinc/",
+		link: "https://www.facebook.com/PaintigoGlobal/",
 		icon: <IoLogoFacebook />,
 		className: "facebook",
 		title: "text-facebook",
 	},
 	{
 		id: 1,
-		link: "https://twitter.com/redqinc",
+		link: "https://twitter.com/paintigo",
 		icon: <IoLogoTwitter />,
 		className: "twitter",
 		title: "text-twitter",
 	},
 	{
 		id: 2,
-		link: "https://www.youtube.com/channel/UCjld1tyVHRNy_pe3ROLiLhw",
+		link: "https://www.youtube.com/@paintigo9457",
 		icon: <IoLogoYoutube />,
 		className: "youtube",
 		title: "text-youtube",
 	},
 	{
 		id: 3,
-		link: "https://www.instagram.com/redqinc/",
+		link: "https://www.instagram.com/paintigoshop/",
 		icon: <IoLogoInstagram />,
 		className: "instagram",
 		title: "text-instagram",

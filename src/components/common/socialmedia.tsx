@@ -13,7 +13,7 @@ const socialmediaFeed = [
   {
     id: 1,
     title: "text-instagram",
-    slug: "/#",
+    slug: "https://www.instagram.com/paintigoshop/",
     image: "/assets/images/social/262626.jpg",
     icon: (
       <FaInstagram className="text-white text-base sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl transform opacity-0 scale-400 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100" />
@@ -22,7 +22,7 @@ const socialmediaFeed = [
   {
     id: 2,
     title: "text-facebook",
-    slug: "/#",
+    slug: "https://www.facebook.com/PaintigoGlobal/",
     image: "/assets/images/social/262626.jpg",
     icon: (
       <FaFacebook className="text-white text-base sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl transform opacity-0 scale-400 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100" />
@@ -40,7 +40,7 @@ const socialmediaFeed = [
   {
     id: 4,
     title: "text-pinterest",
-    slug: "/#",
+    slug: "https://www.pinterest.com/paintigoshop/",
     image: "/assets/images/social/262626.jpg",
     icon: (
       <FaPinterest className="text-white text-base sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl transform opacity-0 scale-400 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100" />
