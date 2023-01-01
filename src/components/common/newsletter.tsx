@@ -41,13 +41,8 @@ export default function Newsletter() {
 			}
 			  `;
       const response = await ShopifyData(query);
-      console.log(response);
       
-	  console.log(response.data.customerCreate?.customerUserErrors?.length);
-if (response.data.customerCreate?.customerUserErrors) {
-  console.log("errot");
-  
-}
+
     }
     Subscriber();
   }

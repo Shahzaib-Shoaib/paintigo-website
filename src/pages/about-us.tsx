@@ -80,7 +80,6 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 				"common",
 				"forms",
 				"menu",
-				"terms",
 				"footer",
 				"aboutus",
 			])),
