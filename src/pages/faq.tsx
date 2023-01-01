@@ -32,6 +32,8 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 				"menu",
 				"faq",
 				"footer",
+				"aboutus",
+
 			])),
 		},
 	};

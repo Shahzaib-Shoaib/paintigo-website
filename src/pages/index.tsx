@@ -66,6 +66,8 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
         "forms",
         "menu",
         "footer",
+        "aboutus",
+
       ])),
       products,
     },

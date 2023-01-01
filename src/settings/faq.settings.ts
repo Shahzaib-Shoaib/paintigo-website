@@ -71,58 +71,57 @@ export const faq = [
     titleKey: "faq-nineteen-title",
     contentKey: "faq-nineteen-content",
   },
-  {
-    titleKey: "faq-twenty-title",
-    contentKey: "faq-twenty-content",
-  },
-  {
-    titleKey: "faq-twenty-one-title",
-    contentKey: "faq-twenty-one-content",
-  },
-  {
-    titleKey: "faq-twenty-two-title",
-    contentKey: "faq-twenty-two-content",
-  },
-  {
-    titleKey: "faq-twenty-three-title",
-    contentKey: "faq-twenty-three-content",
-  },
-  {
-    titleKey: "faq-twenty-four-title",
-    contentKey: "faq-twenty-four-content",
-  },
-  {
-    titleKey: "faq-twenty-five-title",
-    contentKey: "faq-twenty-five-content",
-  },
-  {
-    titleKey: "faq-twenty-six-title",
-    contentKey: "faq-twenty-six-content",
-  },
-  {
-    titleKey: "faq-twenty-seven-title",
-    contentKey: "faq-twenty-seven-content",
-  },
-  {
-    titleKey: "faq-twenty-eight-title",
-    contentKey: "faq-twenty-eight-content",
-  },
-  {
-    titleKey: "faq-twenty-nine-title",
-    contentKey: "faq-twenty-nine-content",
-  },
-  {
-    titleKey: "faq-thirty-title",
-    contentKey: "faq-thirty-content",
-  },
-  {
-    titleKey: "faq-thirty-one-title",
-    contentKey: "faq-thirty-one-content",
-  },
-  {
-    titleKey: "faq-thirty-two-title",
-    contentKey: "faq-thirty-two-content",
-  },
- 
-
 ];
+
+// {
+//   titleKey: "faq-twenty-title",
+//   contentKey: "faq-twenty-content",
+// },
+// {
+//   titleKey: "faq-twenty-one-title",
+//   contentKey: "faq-twenty-one-content",
+// },
+// {
+//   titleKey: "faq-twenty-two-title",
+//   contentKey: "faq-twenty-two-content",
+// },
+// {
+//   titleKey: "faq-twenty-three-title",
+//   contentKey: "faq-twenty-three-content",
+// },
+// {
+//   titleKey: "faq-twenty-four-title",
+//   contentKey: "faq-twenty-four-content",
+// },
+// {
+//   titleKey: "faq-twenty-five-title",
+//   contentKey: "faq-twenty-five-content",
+// },
+// {
+//   titleKey: "faq-twenty-six-title",
+//   contentKey: "faq-twenty-six-content",
+// },
+// {
+//   titleKey: "faq-twenty-seven-title",
+//   contentKey: "faq-twenty-seven-content",
+// },
+// {
+//   titleKey: "faq-twenty-eight-title",
+//   contentKey: "faq-twenty-eight-content",
+// },
+// {
+//   titleKey: "faq-twenty-nine-title",
+//   contentKey: "faq-twenty-nine-content",
+// },
+// {
+//   titleKey: "faq-thirty-title",
+//   contentKey: "faq-thirty-content",
+// },
+// {
+//   titleKey: "faq-thirty-one-title",
+//   contentKey: "faq-thirty-one-content",
+// },
+// {
+//   titleKey: "faq-thirty-two-title",
+//   contentKey: "faq-thirty-two-content",
+// },

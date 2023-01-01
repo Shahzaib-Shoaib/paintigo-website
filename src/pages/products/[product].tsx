@@ -45,6 +45,8 @@ export const getServerSideProps: GetServerSideProps = async ({ locale,params }:a
 				"forms",
 				"menu",
 				"footer",
+				"aboutus",
+
 			])),
 			product
 		},
