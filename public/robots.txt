@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://paintigo.shop
+
+# Sitemaps
+Sitemap: https://paintigo.shop/sitemap.xml
