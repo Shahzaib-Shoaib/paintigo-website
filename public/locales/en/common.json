@@ -1,6 +1,7 @@
 {
   "text-sign-in": "Sign In",
   "text-products": "Products",
+  "text-blogs": "Blogs",
   "text-account": "Account",
   "text-page-explore": "Explore",
   "login-helper": "Login with your email & password",
@@ -29,5 +30,6 @@
   "text-page-faq":"FAQ's",
   "text-page-about-us":"About Us",
   "text-page-return-policy":"Return Policy",
-  "text-page-refund-policy":"Refund Policy"
+  "text-page-refund-policy":"Refund Policy",
+  "text-page-terms-of-service":"Terms Of Service"
 }

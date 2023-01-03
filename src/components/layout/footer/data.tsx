@@ -1,3 +1,4 @@
+import { IoLogoPinterest } from 'react-icons/io'
 import {
   IoLogoInstagram,
   IoLogoTwitter,
@@ -35,6 +36,12 @@ export const footer = {
           path: 'https://www.youtube.com/@paintigo9457',
           icon: <IoLogoYoutube />,
         },
+        {
+          id: 5,
+          title: 'link-pinterest',
+          path: 'https://www.youtube.com/@paintigo9457',
+          icon: <IoLogoPinterest />,
+        },
       ],
     },
     {
@@ -49,17 +56,17 @@ export const footer = {
         {
           id: 2,
           title: 'link-email',
-          path: '/',
+          path: 'mailto:shop@paintigo.com',
         },
         {
           id: 3,
           title: 'link-email-two',
-          path: '/',
+          path: 'mailto:info@paintigo.com',
         },
         {
           id: 4,
           title: 'link-phone',
-          path: '/',
+          path: 'tel:+1 254 568-5479',
         },
       ],
     },
@@ -69,23 +76,13 @@ export const footer = {
       lists: [
         {
           id: 1,
-          title: 'link-support-center',
-          path: '/contact-us',
+          title: 'link-about-us',
+          path: '/about-us',
         },
         {
           id: 2,
-          title: 'link-customer-support',
-          path: '/',
-        },
-        {
-          id: 3,
-          title: 'link-about-us',
-          path: '/contact-us',
-        },
-        {
-          id: 4,
-          title: 'link-copyright',
-          path: '/',
+          title: 'link-site-map',
+          path: '/sitemap-0.xml',
         },
       ],
     },
@@ -100,14 +97,14 @@ export const footer = {
         },
         {
           id: 2,
-          title: 'link-shipping',
-          path: '/',
+          title: 'link-return-policy',
+          path: '/return-policy',
         },
         {
-          id: 3,
-          title: 'link-exchanges',
-          path: '/',
-        },
+          id: 1,
+          title: 'link-refund-policy',
+          path: '/refund-policy',
+        }
       ],
     },
     {
@@ -116,24 +113,20 @@ export const footer = {
       lists: [
         {
           id: 1,
-          title: 'link-privacy',
-          path: '/privacy',
+          title: 'link-amazon-global',
+          path: 'https://www.amazon.com/stores/Paintigo/Homepage/page/AF111FC8-5FD9-4249-A960-58749715DBE6',
         },
         {
           id: 2,
-          title: 'link-terms',
-          path: '/terms',
+          title: 'link-amazon-uk',
+          path: 'https://www.amazon.co.uk/stores/PAINTIGO/Homepage/page/48CC385B-F8FF-4376-AAB1-E26C16076F44',
         },
         {
           id: 3,
-          title: 'link-return-policy',
-          path: '/privacy',
+          title: 'link-terms-of-service',
+          path: '/terms-of-service',
         },
-        {
-          id: 4,
-          title: 'link-site-map',
-          path: '/',
-        },
+       
       ],
     },
   ],

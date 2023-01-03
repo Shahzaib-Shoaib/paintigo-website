@@ -752,45 +752,41 @@ export const siteSettings = {
       },
       {
         id: 9,
-        path: "/about-us",
-        label: "text-about-us",
+        path: "/blogs",
+        label: "text-blogs",
       },
       {
         id: 10,
-        path: "/faq",
-        label: "text-faq",
-      },
-      {
-        id: 11,
-        path: "/contact-us",
-        label: "text-contact-us",
-      },
-      {
-        id: 12,
         path: "/",
         label: "text-amazon",
         subMenu: [
           {
-            id: 2,
+            id: 1,
             path: "https://www.amazon.com/stores/Paintigo/Homepage/page/AF111FC8-5FD9-4249-A960-58749715DBE6",
             label: "text-amazon-global",
           },
           {
-            id: 3,
+            id: 2,
             path: "https://www.amazon.co.uk/stores/PAINTIGO/Homepage/page/48CC385B-F8FF-4376-AAB1-E26C16076F44",
             label: "text-amazon-uk",
           },
         ],
       },
+
       {
-        id: 13,
-        path: "/refund-policy",
-        label: "text-refund-policy",
+        id: 11,
+        path: "/about-us",
+        label: "text-about-us",
       },
       {
-        id: 14,
-        path: "/return-policy",
-        label: "text-return-policy",
+        id: 12,
+        path: "/faq",
+        label: "text-faq",
+      },
+      {
+        id: 13,
+        path: "/contact-us",
+        label: "text-contact-us",
       },
     ],
     mobileMenu: [
@@ -943,21 +939,11 @@ export const siteSettings = {
       },
       {
         id: 9,
-        path: "/about-us",
-        label: "text-about-us",
+        path: "/blogs",
+        label: "text-blogs",
       },
       {
         id: 10,
-        path: "/faq",
-        label: "text-faq",
-      },
-      {
-        id: 11,
-        path: "/contact-us",
-        label: "text-contact-us",
-      },
-      {
-        id: 12,
         path: "/",
         label: "text-amazon",
         subMenu: [
@@ -974,15 +960,21 @@ export const siteSettings = {
         ],
       },
       {
-        id: 13,
-        path: "/refund-policy",
-        label: "text-refund-policy",
+        id: 11,
+        path: "/about-us",
+        label: "text-about-us",
       },
       {
-        id: 14,
-        path: "/return-policy",
-        label: "text-return-policy",
+        id: 12,
+        path: "/faq",
+        label: "text-faq",
       },
+      {
+        id: 13,
+        path: "/contact-us",
+        label: "text-contact-us",
+      },
+    
     ],
     languageMenu: [
       {
