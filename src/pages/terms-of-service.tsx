@@ -30,12 +30,12 @@ export default function AboutUsPage() {
 											duration={500}
 											to={makeTitleToDOMId(item.title)}
 											activeClass="text-[#262626] font-semibold"
-											className="block cursor-pointer py-3 lg:py-3.5 text-sm lg:text-base  text-gray-700 uppercase"
+											className="block cursor-pointer py-3 lg:py-3.5 text-sm lg:text-base  text-gray-700 "
 										>
-											{(index <= 9 ? "0" : "") +
+											{/* {(index <= 9 ? "0" : "") +
 												index +
-												" " +
-												t(`${item.title}`)}
+												" " + */}
+												{t(`${item.title}`)}
 										</Link>
 									</li>
 								))}
