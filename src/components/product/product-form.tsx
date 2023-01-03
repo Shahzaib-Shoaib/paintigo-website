@@ -57,17 +57,17 @@ export default function ProductForm({ product }: any) {
       <div className="flex flex-row my-3">
         {" "}
         <a
-          href={`//www.facebook.com/sharer.php?u=https://paintigo.vercel.app/products/${product.handle}`}
+          href={`//www.facebook.com/sharer.php?u=https://paintigo.shop/products/${product.handle}`}
         >
           <FaFacebook className="text-2xl text-blue-700 mr-2" />
         </a>
         <a
-          href={`//twitter.com/share?text=${product.title}&url=https://paintigo.vercel.app/products/${product.handle}`}
+          href={`//twitter.com/share?text=${product.title}&url=https://paintigo.shop/products/${product.handle}`}
         >
           <FaTwitter className="text-2xl text-blue-400 mx-2" />
         </a>
         <a
-          href={`//pinterest.com/pin/create/button/?url=https://paintigo.vercel.app/products/${product.handle}&description=${product.title}`}
+          href={`//pinterest.com/pin/create/button/?url=https://paintigo.shop/products/${product.handle}&description=${product.title}`}
         >
           <FaPinterest className="text-2xl text-red-600 mx-2" />
         </a>
