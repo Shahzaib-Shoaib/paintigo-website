@@ -139,6 +139,7 @@ export async function getProduct(handle: string, locale) {
       title
       handle
       descriptionHtml
+      description
       images(first: 5) {
         edges {
           node {

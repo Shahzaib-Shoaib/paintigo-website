@@ -101,7 +101,7 @@ export const footer = {
           path: '/return-policy',
         },
         {
-          id: 1,
+          id: 3,
           title: 'link-refund-policy',
           path: '/refund-policy',
         }
