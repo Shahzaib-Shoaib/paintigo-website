@@ -14,7 +14,7 @@ export default function BlogPage({ blog }: any) {
       <NextSeo title={`${blog.title}`} />
       <ArticleJsonLd
         type="BlogPosting"
-        url="https://paintigo.shop/blogs"
+        url={`https://paintigo.shop/blogs/${blog.handle}`}
         title={`${blog.title}`}
         images={[`${blog.image.url}`]}
         datePublished={`${blog.publishedAt}`}
