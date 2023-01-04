@@ -7,11 +7,13 @@ import ContactInfoBlock from "@containers/contact-info";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
+import { NextSeo } from "next-seo";
 
 export default function ContactUsPage() {
 	const { t } = useTranslation("common");
 	return (
 		<>
+		<NextSeo title="Contact Us" />
 			<PageHeader pageHeader="text-page-contact-us" />
 			<Container>
 				<div className="my-14 lg:my-16 xl:my-20 px-0 pb-2 lg: xl:max-w-screen-xl mx-auto flex flex-col md:flex-row w-full">

@@ -6,10 +6,12 @@ import PageHeader from "@components/ui/page-header";
 import { faq } from "@settings/faq.settings";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
+import { NextSeo } from "next-seo";
 
 export default function FAQ() {
 	return (
 		<>
+		<NextSeo title="FAQ'S"/>
 			<PageHeader pageHeader="text-page-faq" />
 			<Container>
 				<div className="py-16 lg:py-20 px-0 max-w-5xl mx-auto space-y-4">

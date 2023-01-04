@@ -5,11 +5,13 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { GetStaticProps } from "next";
 import PageHeader from "@components/ui/page-header";
+import { NextSeo } from "next-seo";
 
 export default function RefundPage() {
   const { t } = useTranslation("policy");
   return (
     <>
+      <NextSeo title="Refund Policy" />
       <PageHeader pageHeader="text-page-refund-policy" />
 
       <div className="py-12 lg:py-16 2xl:py-20">
