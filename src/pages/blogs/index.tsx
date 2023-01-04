@@ -6,15 +6,16 @@ import { ROUTES } from "@utils/routes";
 import { GetStaticProps } from "next";
 import BlogList from "@components/blog/blog-list";
 import { getAllBlogs } from "@lib/shopify";
-
+import { NextSeo } from "next-seo";
 
 export default function Blogs({ blogs }: any) {
   const { t } = useTranslation("common");
-  
+
   return (
     <>
-          <BlogList blogs={blogs} />
+      <NextSeo title="Blogs" />
 
+      <BlogList blogs={blogs} />
     </>
   );
 }
@@ -22,7 +23,7 @@ export default function Blogs({ blogs }: any) {
 Blogs.Layout = Layout;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-    const blogs = await getAllBlogs();
+  const blogs = await getAllBlogs();
 
   return {
     props: {
@@ -32,7 +33,6 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
         "menu",
         "footer",
         "aboutus",
-
       ])),
       blogs,
     },

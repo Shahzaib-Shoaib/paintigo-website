@@ -10,7 +10,6 @@ import { NextSeo } from "next-seo";
 export default function BlogPage({ blog }: any) {
   return (
     <>
-      <NextSeo title="Blogs" />
       <div className="min-h-screen py-12 sm:pt-20">
         <BlogPageContent blog={blog} />
       </div>
