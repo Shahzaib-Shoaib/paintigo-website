@@ -6,10 +6,21 @@ import { getAllBlogs, getAllProducts, getBlog, getProduct } from "@lib/shopify";
 import ProductPageContent from "@components/product/product-page-content";
 import BlogPageContent from "@components/blog/blog-page-content";
 import { NextSeo } from "next-seo";
+import { ArticleJsonLd } from "next-seo";
 
 export default function BlogPage({ blog }: any) {
   return (
     <>
+      <NextSeo title={`${blog.title}`} />
+      <ArticleJsonLd
+        type="BlogPosting"
+        url="https://paintigo.shop/blogs"
+        title={`${blog.title}`}
+        images={[`${blog.image.url}`]}
+        datePublished={`${blog.publishedAt}`}
+        authorName={`${blog.author.name}`}
+        description="This is a mighty good description of this blog."
+      />
       <div className="min-h-screen py-12 sm:pt-20">
         <BlogPageContent blog={blog} />
       </div>
@@ -21,7 +32,6 @@ BlogPage.Layout = Layout;
 
 export async function idk() {
   const blogs = await getAllBlogs();
-  console.log(blogs, "all");
 
   const paths = blogs.map((item: any) => {
     const blog = String(item.node.handle);
