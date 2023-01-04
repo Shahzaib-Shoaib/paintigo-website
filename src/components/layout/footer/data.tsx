@@ -39,7 +39,7 @@ export const footer = {
         {
           id: 5,
           title: 'link-pinterest',
-          path: 'https://www.youtube.com/@paintigo9457',
+          path: 'https://www.pinterest.com/paintigoshop/',
           icon: <IoLogoPinterest />,
         },
       ],

@@ -10,14 +10,14 @@ const Layout: React.FC = ({ children,language }:any) => {
   
   return (
     <div className="flex flex-col min-h-screen">
-    <NextSeo
+    {/* <NextSeo
 				additionalMetaTags={[
 					{
 						name: "viewport",
 						content: "width=device-width, initial-scale=1.0",
 					},
 				]}
-				title="Paintigo"
+				title="Paintigo.."
 				description="Paintigo is dedicated to giving you the very best of Art Supplies, with a focus on quality, pigment, color vibrancy, and long-lasting painting results."
 				canonical=""
 				openGraph={{
@@ -40,7 +40,7 @@ const Layout: React.FC = ({ children,language }:any) => {
 						},
 					],
 				}}
-			/>
+			/> */}
       <Header />
       <main
         className="relative flex-grow"

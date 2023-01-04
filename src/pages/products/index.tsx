@@ -15,6 +15,7 @@ export default function Products({ products }: any) {
   
   return (
     <>
+    
       <ProductList products={products} />
 
       <Container>

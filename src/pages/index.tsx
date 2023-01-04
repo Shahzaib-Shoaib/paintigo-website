@@ -13,6 +13,7 @@ import Divider from "@components/ui/divider";
 import { useUI } from "@contexts/ui.context";
 import { useEffect } from "react";
 import Subscription from "@components/common/subscription";
+import { NextSeo, OrganizationJsonLd } from "next-seo";
 
 const HeroSlider = dynamic(() => import("@containers/hero-slider"), {
   ssr: false,
@@ -37,6 +38,53 @@ export default function Home({ products }: any) {
   }, []);
   return (
     <>
+      <NextSeo
+        additionalMetaTags={[
+          {
+            name: "viewport",
+            content: "width=device-width, initial-scale=1.0",
+          },
+        ]}
+        title="Paintigo"
+        description="Paintigo is dedicated to giving you the very best of Art Supplies, with a focus on quality, pigment, color vibrancy, and long-lasting painting results."
+        canonical=""
+        openGraph={{
+          url: "",
+          title: "Paintigo",
+          description:
+            "Paintigo is dedicated to giving you the very best of Art Supplies, with a focus on quality, pigment, color vibrancy, and long-lasting painting results.",
+        }}
+      />
+      <OrganizationJsonLd
+        type="Corporation"
+        logo="/assets/images/logo.png"
+        legalName="Paintigo"
+        name="Paintigo Shop"
+        address={{
+          streetAddress: "",
+          addressLocality: "",
+          addressRegion: "GFD",
+          postalCode: "95129",
+          addressCountry: "UK",
+        }}
+        contactPoint={[
+          {
+            telephone: "",
+            contactType: "customer service",
+            email: "info@paintigo.com",
+            areaServed: ["GB", "US"],
+            availableLanguage: ["en", "fr", "es", "de", "it"],
+          },
+        ]}
+        sameAs={[
+          "https://www.facebook.com/PaintigoGlobal",
+          "https://twitter.com/paintigo",
+          "https://www.instagram.com/paintigoshop/?hl=en",
+          "https://www.youtube.com/@paintigo9457",
+          "https://www.pinterest.com/paintigoshop/",
+        ]}
+        url="https://paintigo.shop/"
+      />
       <HeroSlider
         data={HomePage}
         variantRounded="default"
@@ -45,13 +93,12 @@ export default function Home({ products }: any) {
         buttonGroupClassName="hidden"
       />
       <FeatureCarousel />
-
       <ProductList products={products} />
       <Divider />
       <Container>
         <CollectionBlock data={collection} />
       </Container>
-      <Subscription/>
+      <Subscription />
     </>
   );
 }
@@ -67,7 +114,6 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
         "menu",
         "footer",
         "aboutus",
-
       ])),
       products,
     },
