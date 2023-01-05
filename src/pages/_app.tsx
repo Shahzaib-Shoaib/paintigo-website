@@ -16,7 +16,6 @@ import "swiper/scss/pagination";
 // Other Files
 import type { AppProps } from "next/app";
 import { useEffect } from "react";
-import { DefaultSeo } from "@components/common/default-seo";
 import ManagedModal from "@components/common/modal/managed-modal";
 import { Analytics } from "@vercel/analytics/react";
 import { ManagedUIContext } from "@contexts/ui.context";
@@ -46,7 +45,6 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
     <QueryClientProvider client={queryClientRef.current}>
       <ManagedUIContext>
         <Layout pageProps={pageProps} language={router.locale}>
-          {/* <DefaultSeo /> */}
           <Component {...pageProps} language={router.locale} />
           <Analytics />
         </Layout>
