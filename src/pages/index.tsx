@@ -41,6 +41,7 @@ export default function Home({ products }: any) {
       <NextSeo
         title="Paintigo"
         description="Paintigo is a brand of acrylic paint pens that are used for art and craft projects. The pens are filled with water-based, non-toxic acrylic paint and are available in a range of colors. They can be used to create fine lines and detailed designs on various surfaces, including paper, wood, glass, and ceramic. Paintigo pens are popular among artists and crafters because they are easy to use and allow for precise control of the paint. They are also water-soluble, so the paint can be easily washed off of most surfaces with water. "
+        canonical="https://paintigo.shop/"
         openGraph={{
           type: "website",
           locale: "en_IE",
