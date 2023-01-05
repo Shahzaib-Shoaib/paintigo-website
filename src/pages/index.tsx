@@ -13,7 +13,7 @@ import Divider from "@components/ui/divider";
 import { useUI } from "@contexts/ui.context";
 import { useEffect } from "react";
 import Subscription from "@components/common/subscription";
-import { NextSeo, OrganizationJsonLd } from "next-seo";
+import { DefaultSeo, NextSeo, OrganizationJsonLd } from "next-seo";
 
 const HeroSlider = dynamic(() => import("@containers/hero-slider"), {
   ssr: false,
@@ -38,28 +38,12 @@ export default function Home({ products }: any) {
   }, []);
   return (
     <>
-      <NextSeo
-        additionalMetaTags={[
-          {
-            name: "viewport",
-            content: "width=device-width, initial-scale=1.0",
-          },
-        ]}
-        title="Paintigo"
-        description="Paintigo is dedicated to giving you the very best of Art Supplies, with a focus on quality, pigment, color vibrancy, and long-lasting painting results."
-        canonical=""
-        openGraph={{
-          url: "",
-          title: "Paintigo",
-          description:
-            "Paintigo is dedicated to giving you the very best of Art Supplies, with a focus on quality, pigment, color vibrancy, and long-lasting painting results.",
-        }}
-      />
+      <DefaultSeo/>
       <OrganizationJsonLd
         type="Corporation"
         logo="/assets/images/logo.png"
         legalName="Paintigo"
-        name="Paintigo Shop"
+        name="Paintigo"
         address={{
           streetAddress: "",
           addressLocality: "",

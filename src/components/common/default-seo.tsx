@@ -12,8 +12,8 @@ export const DefaultSeo = () => {
         site_name: siteSettings.name,
       }}
       twitter={{
-        handle: "@handle",
-        site: "@site",
+        handle: "@paintigo",
+        site: "https://twitter.com/paintigo",
         cardType: "summary_large_image",
       }}
       additionalMetaTags={[
