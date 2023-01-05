@@ -23,7 +23,7 @@ export default function Products({ products }: any) {
         ]}
         title="Products"
         description="Paintigo Products are dedicated to giving you the very best of experience, with a focus on quality, pigment, color vibrancy, and long-lasting painting results."
-        canonical=""
+        canonical="https://paintigo.shop/"
         openGraph={{
           url: "",
           title: "Products",

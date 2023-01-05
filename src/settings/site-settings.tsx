@@ -758,17 +758,47 @@ export const siteSettings = {
       {
         id: 10,
         path: "/",
-        label: "text-amazon",
+        label: "text-amazon-stores",
         subMenu: [
           {
             id: 1,
-            path: "https://www.amazon.com/stores/Paintigo/Homepage/page/AF111FC8-5FD9-4249-A960-58749715DBE6",
+            path: "https://www.amazon.com/stores/Paintigo/page/AF111FC8-5FD9-4249-A960-58749715DBE6?ref_=paintigo.shop",
             label: "text-amazon-global",
           },
           {
             id: 2,
-            path: "https://www.amazon.co.uk/stores/PAINTIGO/Homepage/page/48CC385B-F8FF-4376-AAB1-E26C16076F44",
+            path: "https://www.amazon.co.uk/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
             label: "text-amazon-uk",
+          },
+          {
+            id: 3,
+            path: "http://www.amazon.ca/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-canada",
+          },
+          {
+            id: 4,
+            path: "https://www.amazon.de/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-germany",
+          },
+          {
+            id: 5,
+            path: "https://www.amazon.fr/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-france",
+          },
+          {
+            id: 6,
+            path: "https://www.amazon.it/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-italy",
+          },
+          {
+            id: 7,
+            path: "https://www.amazon.es/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-spain",
+          },
+          {
+            id: 8,
+            path: "https://www.amazon.pl/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-poland",
           },
         ],
       },
@@ -945,17 +975,47 @@ export const siteSettings = {
       {
         id: 10,
         path: "/",
-        label: "text-amazon",
+        label: "text-amazon-stores",
         subMenu: [
           {
             id: 1,
-            path: "https://www.amazon.com/stores/Paintigo/Homepage/page/AF111FC8-5FD9-4249-A960-58749715DBE6",
+            path: "https://www.amazon.com/stores/Paintigo/page/AF111FC8-5FD9-4249-A960-58749715DBE6?ref_=paintigo.shop",
             label: "text-amazon-global",
           },
           {
             id: 2,
-            path: "https://www.amazon.co.uk/stores/PAINTIGO/Homepage/page/48CC385B-F8FF-4376-AAB1-E26C16076F44",
+            path: "https://www.amazon.co.uk/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
             label: "text-amazon-uk",
+          },
+          {
+            id: 3,
+            path: "http://www.amazon.ca/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-canada",
+          },
+          {
+            id: 4,
+            path: "https://www.amazon.de/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-germany",
+          },
+          {
+            id: 5,
+            path: "https://www.amazon.fr/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-france",
+          },
+          {
+            id: 6,
+            path: "https://www.amazon.it/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-italy",
+          },
+          {
+            id: 7,
+            path: "https://www.amazon.es/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-spain",
+          },
+          {
+            id: 8,
+            path: "https://www.amazon.pl/stores/PAINTIGO/page/48CC385B-F8FF-4376-AAB1-E26C16076F44?ref_=paintigo.shop",
+            label: "text-amazon-poland",
           },
         ],
       },
@@ -974,7 +1034,6 @@ export const siteSettings = {
         path: "/contact-us",
         label: "text-contact-us",
       },
-    
     ],
     languageMenu: [
       {
