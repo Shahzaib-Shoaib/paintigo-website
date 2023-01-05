@@ -7,7 +7,7 @@ import { GetStaticProps } from "next";
 import ProductList from "@components/product/product-list";
 import { getProductsInCollection } from "@lib/shopify";
 import SocialMedia from "@components/common/socialmedia";
-import { NextSeo } from "next-seo";
+import { NextSeo, OrganizationJsonLd } from "next-seo";
 
 export default function Products({ products }: any) {
   const { t } = useTranslation("common");
@@ -45,7 +45,36 @@ export default function Products({ products }: any) {
           ],
         }}
       />
-      
+      <OrganizationJsonLd
+        type="Corporation"
+        logo="/assets/images/logo.png"
+        legalName="Paintigo"
+        name="Paintigo Shop"
+        address={{
+          streetAddress: "",
+          addressLocality: "",
+          addressRegion: "GFD",
+          postalCode: "95129",
+          addressCountry: "UK",
+        }}
+        contactPoint={[
+          {
+            telephone: "",
+            contactType: "customer service",
+            email: "info@paintigo.com",
+            areaServed: ["GB", "US"],
+            availableLanguage: ["en", "fr", "es", "de", "it"],
+          },
+        ]}
+        sameAs={[
+          "https://www.facebook.com/PaintigoGlobal",
+          "https://twitter.com/paintigo",
+          "https://www.instagram.com/paintigoshop/?hl=en",
+          "https://www.youtube.com/@paintigo9457",
+          "https://www.pinterest.com/paintigoshop/",
+        ]}
+        url="https://paintigo.shop/"
+      />
       <ProductList products={products} />
       <Container>
         <SocialMedia />
