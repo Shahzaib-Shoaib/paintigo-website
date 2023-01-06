@@ -75,6 +75,7 @@ export default function Products({ products }: any) {
         ]}
         url="https://paintigo.shop/"
       />
+
       <ProductList products={products} />
       <Container>
         <SocialMedia />

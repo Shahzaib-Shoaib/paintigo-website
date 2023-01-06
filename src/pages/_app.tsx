@@ -15,6 +15,7 @@ import "swiper/scss/pagination";
 
 // Other Files
 import type { AppProps } from "next/app";
+import Script from "next/script";
 import { useEffect } from "react";
 import ManagedModal from "@components/common/modal/managed-modal";
 import { Analytics } from "@vercel/analytics/react";
@@ -42,15 +43,32 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
   const Layout = (Component as any).Layout || Noop;
 
   return (
-    <QueryClientProvider client={queryClientRef.current}>
-      <ManagedUIContext>
-        <Layout pageProps={pageProps} language={router.locale}>
-          <Component {...pageProps} language={router.locale} />
-          <Analytics />
-        </Layout>
-        <ManagedModal />
-      </ManagedUIContext>
-    </QueryClientProvider>
+    <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+            page_path: window.location.pathname,
+            });
+        `}
+      </Script>
+      <QueryClientProvider client={queryClientRef.current}>
+        <ManagedUIContext>
+          <Layout pageProps={pageProps} language={router.locale}>
+            <Component {...pageProps} language={router.locale} />
+            <Analytics />
+          </Layout>
+          <ManagedModal />
+        </ManagedUIContext>
+      </QueryClientProvider>
+    </>
   );
 };
 
