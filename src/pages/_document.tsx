@@ -48,12 +48,13 @@ export default class CustomDocument extends Document {
               fbq('track', 'PageView');`,
             }}
           ></Script>
-          <Script
-            strategy="lazyOnload"
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-          />
-          <Script strategy="lazyOnload">
-            {`
+            <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -61,7 +62,7 @@ export default class CustomDocument extends Document {
             page_path: window.location.pathname,
             });
         `}
-          </Script>
+      </Script>
           <noscript>
             <img
               height="1"
