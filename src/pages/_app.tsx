@@ -60,6 +60,7 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
             });
         `}
       </Script>
+
       <QueryClientProvider client={queryClientRef.current}>
         <ManagedUIContext>
           <Layout pageProps={pageProps} language={router.locale}>
