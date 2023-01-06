@@ -24,6 +24,7 @@ import { getDirection } from "@utils/get-direction";
 import { appWithTranslation } from "next-i18next";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { useRef } from "react";
+import Head from "next/head";
 
 type Props = {
   children?: React.ReactNode;
