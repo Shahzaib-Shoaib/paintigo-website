@@ -15,6 +15,8 @@ import "swiper/scss/pagination";
 
 // Other Files
 import type { AppProps } from "next/app";
+import TagManager from "react-gtm-module";
+
 import Script from "next/script";
 import { useEffect } from "react";
 import ManagedModal from "@components/common/modal/managed-modal";
@@ -41,10 +43,11 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
     document.documentElement.dir = dir;
   }, [dir]);
   const Layout = (Component as any).Layout || Noop;
-
+  useEffect(() => {
+    TagManager.initialize({ gtmId: "GTM-KBP463R" });
+  }, []);
   return (
     <>
-    
       <QueryClientProvider client={queryClientRef.current}>
         <ManagedUIContext>
           <Layout pageProps={pageProps} language={router.locale}>
