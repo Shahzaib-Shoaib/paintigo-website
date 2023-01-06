@@ -8,7 +8,7 @@ import ProductList from "@components/product/product-list";
 import { getProductsInCollection } from "@lib/shopify";
 import SocialMedia from "@components/common/socialmedia";
 import { NextSeo, OrganizationJsonLd } from "next-seo";
-
+import Head from "next/head";
 export default function Products({ products }: any) {
   const { t } = useTranslation("common");
 

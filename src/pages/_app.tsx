@@ -24,7 +24,6 @@ import { getDirection } from "@utils/get-direction";
 import { appWithTranslation } from "next-i18next";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { useRef } from "react";
-import Head from "next/head";
 
 type Props = {
   children?: React.ReactNode;
@@ -45,22 +44,7 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
 
   return (
     <>
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-
-      <Script strategy="lazyOnload">
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-            page_path: window.location.pathname,
-            });
-        `}
-      </Script>
-
+    
       <QueryClientProvider client={queryClientRef.current}>
         <ManagedUIContext>
           <Layout pageProps={pageProps} language={router.locale}>
