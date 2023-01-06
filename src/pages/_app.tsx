@@ -23,6 +23,7 @@ import { getDirection } from "@utils/get-direction";
 import { appWithTranslation } from "next-i18next";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { useRef } from "react";
+import TagManager from 'react-gtm-module';
 
 type Props = {
   children?: React.ReactNode;
@@ -40,7 +41,9 @@ const CustomApp = ({ Component, pageProps, router }: AppProps) => {
     document.documentElement.dir = dir;
   }, [dir]);
   const Layout = (Component as any).Layout || Noop;
-
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-565PSTM' });
+}, []);
   return (
     <QueryClientProvider client={queryClientRef.current}>
       <ManagedUIContext>
