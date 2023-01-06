@@ -30,7 +30,6 @@ export default function Home({ products }: any) {
   const { openModal, setModalView } = useUI();
   useEffect(() => {
     setModalView("NEWSLETTER_VIEW");
-    console.log("done");
 
     setTimeout(() => {
       openModal();
