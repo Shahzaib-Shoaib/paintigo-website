@@ -32,7 +32,7 @@ const Copyright: React.FC<CopyrightProps> = ({ payment, variant }) => {
         )}
       >
         <p
-          className={cn("text-white text-xs lg:text-sm leading-6", {
+          className={cn("text-white text-xs lg:text-sm leading-6 md:mt-5 ", {
             "p-0 m-0": variant === "contemporary",
           })}
         >
