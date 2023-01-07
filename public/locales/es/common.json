@@ -1,1 +1,26 @@
-{}
+{
+  "text-products": "Productos",
+  "text-blogs": "Blogs",
+  "text-page-explore": "Explorar",
+  "text-subscribe-heading": "Obtenga consejos de expertos en su bandeja de entrada",
+  "text-subscribe-description": "Suscríbete a nuestro boletín y mantente actualizado.",
+  "button-subscribe": "Suscribir",
+  "feature-title-one": "Envío gratis",
+  "feature-description-one": "EE. UU. Envío gratuito en pedidos superiores a 29,99 $ Devoluciones gratuitas.",
+  "feature-title-two": "100% Felicidad Garantizada",
+  "feature-description-two": "Con nuestra garantía de 30 días nos aseguramos de que obtenga el mejor producto.",
+  "feature-title-three": "De confianza y revisado",
+  "feature-description-three": "★ ★ ★ ★ ★ - Un producto querido con más de 2000 reseñas verificadas.",
+  "feature-title-four": "Servicio al cliente superior",
+  "feature-description-four": "Su plena satisfacción es nuestra prioridad. Responderemos dentro de las 24 horas.",
+  "text-socialmedia": "Identificadores de redes sociales",
+  "text-subscribe-now": "SUSCRÍBASE AHORA",
+  "text-newsletter-title": "Y obtenga una oferta en la nueva colección",
+  "text-newsletter-subtitle": "Suscríbase a Paintigo para recibir actualizaciones sobre novedades, ofertas especiales y nuestras promociones.",
+  "text-page-faq": "Preguntas frecuentes",
+  "text-page-about-us": "Sobre nosotros",
+  "text-page-contact-us": "Contacta con nosotros",
+  "text-page-return-policy": "Política de devoluciones",
+  "text-page-refund-policy": "Politica de reembolso",
+  "text-page-terms-of-service": "Términos de servicio"
+}
