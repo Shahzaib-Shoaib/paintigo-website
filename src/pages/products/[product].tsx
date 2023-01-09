@@ -7,7 +7,7 @@ import ProductPageContent from "@components/product/product-page-content";
 import { NextSeo, ProductJsonLd } from "next-seo";
 
 export default function ProductPage({ product }: any) {
-  console.log(product);
+  // console.log(product);
 
   return (
     <>
@@ -50,18 +50,18 @@ export default function ProductPage({ product }: any) {
           ratingValue: "4.4",
           reviewCount: "89",
         }}
-        offers={[
-          {
-            price: `${product.variants.edges[0].node.priceV2.amount}`,
-            priceCurrency: "GBP",
-            itemCondition: "https://schema.org/NewCondition",
-            availability: "https://schema.org/InStock",
-            url: `https://paintigo.shop/products/${product.handle}`,
-            seller: {
-              name: "Paintigo",
-            },
-          },
-        ]}
+        // offers={[
+        //   {
+        //     price: `${product.variants.edges[0].node.priceV2.amount}`,
+        //     priceCurrency: "GBP",
+        //     itemCondition: "https://schema.org/NewCondition",
+        //     availability: "https://schema.org/InStock",
+        //     url: `https://paintigo.shop/products/${product.handle}`,
+        //     seller: {
+        //       name: "Paintigo",
+        //     },
+        //   },
+        // ]}
       />
       <div className="min-h-screen py-12 sm:pt-20">
         <ProductPageContent product={product} />
