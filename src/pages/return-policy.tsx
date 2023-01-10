@@ -11,7 +11,7 @@ export default function RefundPage() {
   const { t } = useTranslation("policy");
   return (
     <>
-    <NextSeo title="Return Policy" />
+    <NextSeo title="Return Policy" description="At Paintigo, customer satisfaction is our top priority. On our return policy page, you'll find all the details you need to know about returning products. From how to initiate a return, to time frames and conditions for acceptance, everything you need to know is here."/>
       <PageHeader pageHeader="text-page-return-policy" />
 
       <div className="py-12 lg:py-16 2xl:py-20">

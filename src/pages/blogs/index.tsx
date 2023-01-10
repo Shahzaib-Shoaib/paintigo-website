@@ -13,7 +13,7 @@ export default function Blogs({ blogs }: any) {
 
   return (
     <>
-      <NextSeo title="Blogs" />
+      <NextSeo title="Blogs" description="Read Paintigo's latest post on Art & Craft."  />
 
       <BlogList blogs={blogs} />
     </>

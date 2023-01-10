@@ -11,7 +11,7 @@ import { NextSeo } from "next-seo";
 export default function FAQ() {
 	return (
 		<>
-		<NextSeo title="FAQ'S"/>
+		<NextSeo title="FAQ's" description="Get quick answers to common questions about Paintigo and our products. Our FAQ page covers everything from specific topics to general information. Find the information you need today."/>
 			<PageHeader pageHeader="text-page-faq" />
 			<Container>
 				<div className="py-16 lg:py-20 px-0 max-w-5xl mx-auto space-y-4">

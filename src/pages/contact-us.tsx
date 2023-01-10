@@ -13,7 +13,7 @@ export default function ContactUsPage() {
 	const { t } = useTranslation("common");
 	return (
 		<>
-		<NextSeo title="Contact Us" />
+		<NextSeo title="Contact Us" description="Get in touch with Paintigo. Our contact page provides multiple options to reach out to us, including phone, email, and a contact form. We're here to help you with any questions or concerns." />
 			<PageHeader pageHeader="text-page-contact-us" />
 			<Container>
 				<div className="my-14 lg:my-16 xl:my-20 px-0 pb-2 lg: xl:max-w-screen-xl mx-auto flex flex-col md:flex-row w-full">
