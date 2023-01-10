@@ -6,6 +6,7 @@ import Link from "next/link";
 import { CartContext } from "@contexts/shopContext";
 import { formatter } from "@utils/helper";
 import Scrollbar from "@components/common/scrollbar";
+import { useTranslation } from "next-i18next";
 
 export default function MiniCart({ cart }: any) {
   const cancelButtonRef = useRef<HTMLButtonElement>(null);
@@ -13,6 +14,7 @@ export default function MiniCart({ cart }: any) {
   const { setCartOpen }: any = useContext(CartContext);
   const { checkoutUrl }: any = useContext(CartContext);
   const { removeCartItem }: any = useContext(CartContext);
+  const { t } = useTranslation("common");
 
   let cartTotal = 0;
   cart.map((item: any) => {
@@ -57,7 +59,7 @@ export default function MiniCart({ cart }: any) {
                   <div className="flex-1 py-6 overflow-y-auto px-4 sm:px-6 mr-8 md:mr-4">
                     <div className="flex items-start justify-between">
                       <Dialog.Title className="text-lg font-medium text-gray-900">
-                        Shopping cart
+                        {t("text-shopping-cart")}
                       </Dialog.Title>
                       <div className="ml-3 h-7 flex items-center">
                         <button
@@ -129,7 +131,7 @@ export default function MiniCart({ cart }: any) {
                                           type="button"
                                           className="font-medium text-gray-500 hover:text-gray-800"
                                         >
-                                          Remove
+                                          {t("text-remove")}
                                         </button>
                                       </div>
                                     </div>
@@ -139,7 +141,7 @@ export default function MiniCart({ cart }: any) {
                             </ul>
                           ) : (
                             <div className="">
-                              <p>Nothing in your Cart!</p>
+                              <p> {t("text-cart-empty")}</p>
                             </div>
                           )}
                         </div>
@@ -149,18 +151,18 @@ export default function MiniCart({ cart }: any) {
                   {cart.length > 0 ? (
                     <div className="border-t border-gray-200 py-6 px-4 sm:px-6 mr-8 md:mr-4">
                       <div className="flex justify-between text-base font-medium text-gray-900">
-                        <p>Subtotal</p>
+                        <p> {t("text-subtotal")}</p>
                         <p>{formatter.format(cartTotal)}</p>
                       </div>
                       <p className="mt-0.5 text-sm text-gray-500">
-                        Shipping and taxes calculated at checkout.
+                        {t("text-checkout-instruction")}
                       </p>
                       <div className="mt-6">
                         <a
                           href={checkoutUrl}
                           className="flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-black hover:bg-gray-800"
                         >
-                          Checkout
+                          {t("text-checkout")}
                         </a>
                       </div>
                       <div className="mt-6 flex justify-center text-sm text-center text-gray-500">
@@ -171,7 +173,7 @@ export default function MiniCart({ cart }: any) {
                             className="font-medium hover:text-gray-800"
                             onClick={() => setCartOpen(false)}
                           >
-                            Continue Shopping
+                            {t("text-continue-shopping")}
                             <span aria-hidden="true"> &rarr;</span>
                           </button>
                         </p>

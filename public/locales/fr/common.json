@@ -22,5 +22,13 @@
   "text-page-contact-us": "Nous contacter",
   "text-page-return-policy": "Politique de retour",
   "text-page-refund-policy": "Politique de remboursement",
-  "text-page-terms-of-service": "Conditions d'utilisation"
+  "text-page-terms-of-service": "Conditions d'utilisation",
+  "text-shopping-cart": "Panier",
+  "text-subtotal": "Sous-total",
+  "text-checkout": "Commander",
+  "text-checkout-instruction": "Livraison et taxes calculées au moment du paiement.",
+  "text-continue-shopping": "Continuer vos achats",
+  "text-cart-empty": "Rien dans votre panier !",
+  "text-remove":"Supprimer",
+  "text-or":"Ou alors"
 }

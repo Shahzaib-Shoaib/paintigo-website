@@ -22,5 +22,13 @@
   "text-page-contact-us": "Contacta con nosotros",
   "text-page-return-policy": "Política de devoluciones",
   "text-page-refund-policy": "Politica de reembolso",
-  "text-page-terms-of-service": "Términos de servicio"
+  "text-page-terms-of-service": "Términos de servicio",
+  "text-shopping-cart": "Carrito de Compras",
+  "texto-subtotal": "Subtotal",
+  "text-checkout": "Pagar",
+  "text-checkout-instruction": "Envío e impuestos calculados al finalizar la compra.",
+  "text-continue-shopping": "Continuar comprando",
+  "text-cart-empty": "¡Nada en tu carrito!",
+  "text-remove":"Eliminar",
+  "text-or":"O"
 }

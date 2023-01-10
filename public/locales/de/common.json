@@ -22,5 +22,13 @@
   "text-page-contact-us": "Kontaktiere uns",
   "text-page-return-policy": "Rücknahmegarantie",
   "text-page-refund-policy": "Rückgaberecht",
-  "text-page-terms-of-service": "Nutzungsbedingungen"
+  "text-page-terms-of-service": "Nutzungsbedingungen",
+  "text-shopping-cart": "Warenkorb",
+  "text-subtotal": "Zwischensumme",
+  "text-checkout": "Zur Kasse",
+  "text-checkout-instruction": "Versand und Steuern werden an der Kasse berechnet.",
+  "text-continue-shopping": "Weiter einkaufen",
+  "text-cart-empty": "Nichts in Ihrem Einkaufswagen!",
+  "text-remove": "Entfernen",
+  "text-or": "Oder"
 }

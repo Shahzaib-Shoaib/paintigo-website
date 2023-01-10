@@ -22,5 +22,13 @@
   "text-page-contact-us": "Contact Us",
   "text-page-return-policy": "Return Policy",
   "text-page-refund-policy": "Refund Policy",
-  "text-page-terms-of-service": "Terms Of Service"
+  "text-page-terms-of-service": "Terms Of Service",
+  "text-shopping-cart": "Shopping Cart",
+  "text-subtotal": "Subtotal",
+  "text-checkout": "Checkout",
+  "text-checkout-instruction": "Shipping and taxes calculated at checkout.",
+  "text-continue-shopping": "Continue Shopping",
+  "text-cart-empty": "Nothing in your Cart !",
+  "text-remove":"Remove",
+  "text-or":"Or"
 }
