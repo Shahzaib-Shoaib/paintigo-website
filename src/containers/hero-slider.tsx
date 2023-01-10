@@ -33,6 +33,7 @@ const HeroSlider: React.FC<Props> = ({
       )}
     >
       <Carousel
+      loop={true}
         autoplay={{
           delay: 5000,
         }}
