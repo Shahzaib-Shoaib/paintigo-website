@@ -25,7 +25,7 @@ export default class CustomDocument extends Document {
           {" "}
           <link rel="shortcut icon" href="/favicon.ico" />
           <Script
-            strategy="afterInteractive"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -35,7 +35,7 @@ export default class CustomDocument extends Document {
             }}
           ></Script>
           <Script
-            strategy="afterInteractive"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{
               __html: `!function(f,b,e,v,n,t,s)
               {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -50,12 +50,12 @@ export default class CustomDocument extends Document {
             }}
           ></Script>
           <Script
-            strategy="lazyOnload"
+            strategy="beforeInteractive"
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
           />
           {/* <!-- Clarity tracking code for https://paintigo.shop/ --> */}
           <Script
-            strategy="afterInteractive"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{
               __html: `  (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -64,7 +64,7 @@ export default class CustomDocument extends Document {
             })(window, document, "clarity", "script", "fbnbfrp8vf");`,
             }}
           ></Script>
-          <Script strategy="lazyOnload">
+          <Script strategy="beforeInteractive">
             {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
