@@ -23,6 +23,7 @@ export default class CustomDocument extends Document {
       <Html dir={getDirection(locale)} style={{ overflow: "auto" }}>
         <Head>
           {" "}
+          <link rel="shortcut icon" href="/favicon.ico" />
           <Script
             strategy="afterInteractive"
             dangerouslySetInnerHTML={{
