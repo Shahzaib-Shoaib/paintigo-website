@@ -88,6 +88,11 @@ export const footer = {
         },
         {
           id: 2,
+          title: "link-terms-of-service",
+          path: "/terms-of-service",
+        },
+        {
+          id: 3,
           title: "link-site-map",
           path: "/sitemap-0.xml",
         },
@@ -121,42 +126,42 @@ export const footer = {
         {
           id: 1,
           title: "link-amazon-global",
-          path: "https://www.amazon.com/stores/Paintigo/Homepage/page/AF111FC8-5FD9-4249-A960-58749715DBE6",
+          path: "http://www.amazon.com/dp/B087CDP6QY?ref=paintigo.shop",
         },
         {
           id: 2,
           title: "link-amazon-uk",
-          path: "https://www.amazon.co.uk/stores/PAINTIGO/Homepage/page/48CC385B-F8FF-4376-AAB1-E26C16076F44",
+          path: "http://www.amazon.co.uk/dp/B087CDP6QY?ref=paintigo.shop",
         },
         {
           id: 3,
           title: "link-amazon-canada",
-          path: "/terms-of-service",
+          path: "http://www.amazon.ca/dp/B087CDP6QY?ref=paintigo.shop",
         },
         {
           id: 4,
           title: "link-amazon-germany",
-          path: "/terms-of-service",
+          path: "http://www.amazon.de/dp/B087CDP6QY?ref=paintigo.shop",
         },
         {
           id: 5,
           title: "link-amazon-france",
-          path: "/terms-of-service",
+          path: "http://www.amazon.fr/dp/B087CDP6QY?ref=paintigo.shop ",
         },
         {
           id: 6,
           title: "link-amazon-italy",
-          path: "/terms-of-service",
+          path: "http://www.amazon.it/dp/B087CDP6QY?ref=paintigo.shop",
         },
         {
           id: 7,
           title: "link-amazon-spain",
-          path: "/terms-of-service",
+          path: "http://www.amazon.es/dp/B087CDP6QY?ref=paintigo.shop",
         },
         {
           id: 8,
           title: "link-amazon-poland",
-          path: "/terms-of-service",
+          path: "http://www.amazon.pl/dp/B087CDP6QY?ref=paintigo.shop",
         },
       ],
     },
