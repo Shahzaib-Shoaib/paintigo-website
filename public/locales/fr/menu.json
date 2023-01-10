@@ -1,3 +1,18 @@
 {
- 
+  "text-products": "Des produits",
+  "text-about-us": "À propos de nous",
+  "text-faq": "FAQ's",
+  "text-blogs": "Blogues",
+  "text-contact-us": "Nous contacter",
+  "text-amazon-stores": "Boutiques Amazon",
+  "text-amazon-global": "Amazon mondial",
+  "text-amazon-france": "Amazon France",
+  "text-amazon-uk": "Amazon Royaume-Unis",
+  "text-amazon-canada": "Amazon Canada",
+  "text-amazon-germany": "Amazon Allemagne",
+  "text-amazon-spain": "Amazonie Espagne",
+  "text-amazon-italy": "Amazonie Italie",
+  "text-amazon-poland": "Amazonie Pologne",
+  "text-refund-policy": "Politique de remboursement",
+  "text-return-policy": "Politique de retour"
 }
