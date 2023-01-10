@@ -1,1 +1,6 @@
-{}
+{
+  "label-email": "Correo electrónico  ",
+  "label-password": "Contraseña",
+  "label-remember-me": "Recuérdame",
+  "placeholder-email-subscribe": "Escriba su correo electrónico aquí"
+}
