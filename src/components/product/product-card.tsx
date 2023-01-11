@@ -16,7 +16,7 @@ const ProductCard = ({ product }: any) => {
   return (
     <Link legacyBehavior href={`${ROUTES.PRODUCT}/${handle}`}>
       <div className="group">
-        <div className="w-full bg-gray-200 rounded-3xl overflow-hidden ">
+        <div className="w-full bg-white rounded overflow-hidden ">
           <div className="relative object-fill group-hover:opacity-75 h-72 ">
             <Image
               priority={true}
