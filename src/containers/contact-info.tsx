@@ -6,21 +6,21 @@ const mapImage = "/assets/images/map-image.jpg";
 const data = [
   {
     id: 1,
-    slug: "/",
+    slug: "#",
     icon: <IoLocationSharp />,
     name: "text-address",
     description: "text-address-details",
   },
   {
     id: 2,
-    slug: "/",
+    slug: "mailto:shop@paintigo.com",
     icon: <IoMail />,
     name: "text-email",
     description: "text-email-details",
   },
   {
     id: 3,
-    slug: "/",
+    slug: "tel:+1 254 568-5479",
     icon: <IoCallSharp />,
     name: "text-phone",
     description: "text-phone-details",
