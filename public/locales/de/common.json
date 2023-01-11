@@ -30,5 +30,14 @@
   "text-continue-shopping": "Weiter einkaufen",
   "text-cart-empty": "Nichts in Ihrem Einkaufswagen!",
   "text-remove": "Entfernen",
-  "text-or": "Oder"
+  "text-or": "Oder",
+  "text-find-us-here": "Hier finden Sie uns",
+  "text-address": "Adresse",
+  "text-address-details": "Greenford, UK",
+  "text-email": "E-Mail",
+  "text-email-details": "shop@paintigo.com",
+  "text-phone": "Telefon",
+  "text-phone-details": "+1 254 568-5479",
+  "text-get-in-touch": "Kontakt aufnehmen",
+  "button-send-message": "Nachricht senden"
 }

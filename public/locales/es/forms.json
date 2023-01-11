@@ -2,5 +2,17 @@
   "label-email": "Correo electrónico  ",
   "label-password": "Contraseña",
   "label-remember-me": "Recuérdame",
-  "placeholder-email-subscribe": "Escriba su correo electrónico aquí"
+  "placeholder-email-subscribe": "Escriba su correo electrónico aquí",
+   "label-name-required": "Tu nombre (requerido)",
+   "label-email-required": "Tu correo electrónico (requerido)",
+   "label-subject": "Asunto",
+   "label-message": "Mensaje",
+   "placeholder-name": "Ingrese su nombre",
+   "placeholder-email": "Ingrese su correo electrónico",
+   "placeholder-subject": "Ingrese su Asunto",
+   "placeholder-message": "Escribe tu mensaje aquí",
+   "name-subject": "Tu asunto es obligatorio",
+   "name-required": "El nombre es obligatorio",
+   "email-required": "El correo electrónico es obligatorio",
+   "email-error": "Proporcione una dirección de correo electrónico válida"
 }

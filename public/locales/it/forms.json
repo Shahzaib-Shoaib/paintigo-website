@@ -2,5 +2,17 @@
   "label-email": "E-mail",
   "label-password": "Parola d'ordine",
   "label-remember-me": "Ricordati di me",
-  "placeholder-email-subscribe": "Scrivi qui la tua email"
+  "placeholder-email-subscribe": "Scrivi qui la tua email",
+   "label-name-required": "Il tuo nome (richiesto)",
+   "label-email-required": "La tua email (richiesto)",
+   "label-subject": "Oggetto",
+   "label-message": "Messaggio",
+   "placeholder-name": "Inserisci il tuo nome",
+   "placeholder-email": "Inserisci la tua email",
+   "placeholder-subject": "Inserisci il tuo oggetto",
+   "placeholder-message": "Scrivi qui il tuo messaggio",
+   "name-subject": "Il tuo oggetto è obbligatorio",
+   "name-required": "Il nome è obbligatorio",
+   "email-required": "L'email è richiesta",
+   "email-error": "Inserisci un indirizzo email valido"
 }
