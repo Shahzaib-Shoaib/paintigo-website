@@ -6,11 +6,12 @@ import { ROUTES } from "@utils/routes";
 import { GetStaticProps } from "next";
 import ProductList from "@components/product/product-list";
 import CollectionList from "@components/collection/collection-list";
-import { getAllCollections } from "@lib/shopify";
+import {
+  getAllCollections,
+} from "@lib/shopify";
 import SocialMedia from "@components/common/socialmedia";
 
 export default function Collections({ collections }: any) {
-
   const { t } = useTranslation("common");
 
   return (
