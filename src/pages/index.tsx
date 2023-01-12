@@ -107,7 +107,7 @@ export default function Home({ products }: any) {
         url="https://paintigo.shop/"
       />
       <Head>
-        <title>Paintigo</title>
+        <title>Paintigo - Home</title>
       </Head>
       <HeroSlider
         data={HomePage}
