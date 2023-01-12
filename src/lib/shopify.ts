@@ -3,7 +3,7 @@ const storefrontAccessToken = process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN;
 
 export async function ShopifyData(query: string) {
   const URL = `https://${domain}/api/2022-10/graphql.json`;
-  
+
   const options: any = {
     endpoint: URL,
     method: "POST",
@@ -17,20 +17,14 @@ export async function ShopifyData(query: string) {
 
   try {
     const data = await fetch(URL, options).then((response) => {
-
       return response.json();
-      
     });
 
     return data;
-    
-    
   } catch (error) {
     throw new Error("Products not fetched");
   }
-  
 }
-
 
 export async function getProductsInCollection(locale: any) {
   const language = locale.toUpperCase();
@@ -100,7 +94,6 @@ export async function getAllProducts() {
 }
 
 export async function getProduct(handle: string, locale) {
-  
   const language = locale.toUpperCase();
 
   const query = `
@@ -373,4 +366,43 @@ export async function getBlog(handle: string) {
     : [];
 
   return blog;
+}
+
+export async function getAllCollections(locale: any) {
+  const language = locale.toUpperCase();
+
+  const query = `
+   query Localization @inContext(language: ${language}){
+    collections(first: 10) {
+      edges {
+        node {
+          id
+          title
+          handle
+          image{
+            altText
+            id
+            url
+          }
+          products(first: 10) {
+            edges {
+              node {
+                id
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+`;
+
+  const response = await ShopifyData(query);
+
+  const allCollections = response.data.collections.edges
+    ? response.data.collections.edges
+    : [];
+
+  return allCollections;
 }

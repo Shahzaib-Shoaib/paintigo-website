@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import { getProductsInCollection, getAllBlogs, getBlog } from "@lib/shopify";
+import { getProductsInCollection } from "@lib/shopify";
 import ProductList from "@components/product/product-list";
 import { HomePage } from "@framework/static/banner";
 import Layout from "@components/layout/layout";
