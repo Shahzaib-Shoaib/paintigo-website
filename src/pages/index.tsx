@@ -38,7 +38,7 @@ export default function Home({ products }: any) {
   return (
     <>
       <NextSeo
-        title="Paintigo"
+        title="High-Quality Acrylic Paint Pens by Paintigo - Unleash Your Creativity"
         description="Paintigo is dedicated to giving you the very best of Art Supplies, with a focus on quality, pigment, color vibrancy, and long-lasting painting results. "
         canonical="https://paintigo.shop/"
         openGraph={{
@@ -106,6 +106,9 @@ export default function Home({ products }: any) {
         ]}
         url="https://paintigo.shop/"
       />
+      <Head>
+        <title>Paintigo</title>
+      </Head>
       <HeroSlider
         data={HomePage}
         variantRounded="default"
