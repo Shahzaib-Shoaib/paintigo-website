@@ -39,7 +39,7 @@ export default function Home({ products }: any) {
     <>
       <NextSeo
         title="High-Quality Acrylic Paint Pens by Paintigo - Unleash Your Creativity"
-        description="Paintigo is dedicated to giving you the very best of Art Supplies, with a focus on quality, pigment, color vibrancy, and long-lasting painting results. "
+        description="Paintigo is dedicated to giving you the very best of acrylic paint pens, with a focus on quality, pigment, color vibrancy, and long-lasting painting results. "
         canonical="https://paintigo.shop/"
         openGraph={{
           type: "website",

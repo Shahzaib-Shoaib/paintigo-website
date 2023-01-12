@@ -8,12 +8,9 @@ import {
   getProduct,
   getProductsOfSpecificCollection,
 } from "@lib/shopify";
-import ProductPageContent from "@components/product/product-page-content";
-import { NextSeo, ProductJsonLd } from "next-seo";
 import ProductList from "@components/product/product-list";
 
 export default function CollectionPage({ collection }: any) {
-  console.log(collection);
 
   return (
     <>
