@@ -10,7 +10,6 @@ import { getAllCollections } from "@lib/shopify";
 import SocialMedia from "@components/common/socialmedia";
 
 export default function Collections({ collections }: any) {
-  console.log(collections);
 
   const { t } = useTranslation("common");
 
