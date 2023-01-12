@@ -107,7 +107,7 @@ export default function Home({ products }: any) {
         url="https://paintigo.shop/"
       />
       <Head>
-        <title>Paintigo Acrylic Paint Pens</title>
+        <title>High-Quality Acrylic Paint Pens by Paintigo - Unleash Your Creativity</title>
       </Head>
       <HeroSlider
         data={HomePage}
