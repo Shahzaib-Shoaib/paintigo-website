@@ -15,9 +15,10 @@ export interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 
 const variantClasses = {
 	normal:
-		"bg-white border border-gray-300 focus:shadow focus:outline-none focus:border-heading placeholder-body",
+		"bg-white border border-gray-300 focus:shadow focus:outline-none focus:border-gray-900 text-gray-600 placeholder-body",
 	solid:
 		"bg-gray-100 border border-gray-100 focus:bg-white focus:border-primary",
+		// bg-white border-gray-300 focus:outline-none focus:border-gray-900 h-11 md:h-12
 	outline: "border border-gray-300 focus:border-primary",
 };
 
