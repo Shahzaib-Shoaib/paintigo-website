@@ -13,12 +13,12 @@ import { useUI } from "@contexts/ui.context";
 import { useEffect } from "react";
 import Subscription from "@components/common/subscription";
 import { NextSeo, OrganizationJsonLd } from "next-seo";
-import HeroSlider from '@containers/hero-slider'
+// import HeroSlider from '@containers/hero-slider'
 // import FeatureCarousel from "@components/common/featured-carousel";
 
-// const HeroSlider = dynamic(() => import("@containers/hero-slider"), {
-//   ssr: false,
-// });
+const HeroSlider = dynamic(() => import("@containers/hero-slider"), {
+  ssr: false,
+});
 
 const FeatureCarousel = dynamic(
   () => import("@components/common/featured-carousel"),
