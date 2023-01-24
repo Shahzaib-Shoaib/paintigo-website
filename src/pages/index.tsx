@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import Head from "next/head";
 import { getProductsInCollection } from "@lib/shopify";
 import ProductList from "@components/product/product-list";
 import { HomePage } from "@framework/static/banner";
@@ -14,10 +13,12 @@ import { useUI } from "@contexts/ui.context";
 import { useEffect } from "react";
 import Subscription from "@components/common/subscription";
 import { NextSeo, OrganizationJsonLd } from "next-seo";
+import HeroSlider from '@containers/hero-slider'
+// import FeatureCarousel from "@components/common/featured-carousel";
 
-const HeroSlider = dynamic(() => import("@containers/hero-slider"), {
-  ssr: false,
-});
+// const HeroSlider = dynamic(() => import("@containers/hero-slider"), {
+//   ssr: false,
+// });
 
 const FeatureCarousel = dynamic(
   () => import("@components/common/featured-carousel"),
