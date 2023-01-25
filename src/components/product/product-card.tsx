@@ -31,7 +31,7 @@ const ProductCard = ({ product }: any) => {
         <p className="mt-1 text-sm text-gray-700">{formatter.format(price)}</p>
       </div> */}
 
-      <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
         <a href="#">
           <img className="p-3 rounded-t-lg" src={originalSrc} alt={title} />
           {/* <Image
