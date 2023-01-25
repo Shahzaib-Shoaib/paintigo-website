@@ -1,25 +1,40 @@
 import dynamic from "next/dynamic";
 import { getProductsInCollection } from "@lib/shopify";
-import ProductList from "@components/product/product-list";
+// import ProductList from "@components/product/product-list";
 import { HomePage } from "@framework/static/banner";
-import Layout from "@components/layout/layout";
+// import Layout from "@components/layout/layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
-import CollectionBlock from "@containers/collection-block";
+// import CollectionBlock from "@containers/collection-block";
 import { collectionData as collection } from "@framework/static/collection";
 import Container from "@components/ui/container";
 import Divider from "@components/ui/divider";
 import { useUI } from "@contexts/ui.context";
 import { useEffect } from "react";
-import Subscription from "@components/common/subscription";
+// import Subscription from "@components/common/subscription";
 import { NextSeo, OrganizationJsonLd } from "next-seo";
 // import HeroSlider from '@containers/hero-slider'
 // import FeatureCarousel from "@components/common/featured-carousel";
 
-const HeroSlider = dynamic(() => import("@containers/hero-slider"), {
+const CollectionBlock = dynamic(() => import("@containers/collection-block"), {
   ssr: false,
 });
 
+const Subscription = dynamic(() => import("@components/common/subscription"), {
+  ssr: false,
+});
+
+const Layout = dynamic(() => import("@components/layout/layout"), {
+  ssr: false,
+});
+
+const ProductList = dynamic(() => import("@components/product/product-list"), {
+  ssr: false,
+});
+
+const HeroSlider = dynamic(() => import("@containers/hero-slider"), {
+  ssr: false,
+});
 const FeatureCarousel = dynamic(
   () => import("@components/common/featured-carousel"),
   { ssr: false }
@@ -38,7 +53,6 @@ export default function Home({ products }: any) {
   }, []);
   return (
     <>
-     
       <NextSeo
         title="High-Quality Acrylic Paint Pens by Paintigo - Unleash Your Creativity"
         description="Paintigo is dedicated to giving you the very best of acrylic paint pens, with a focus on quality, pigment, color vibrancy, and long-lasting painting results. "
@@ -108,7 +122,7 @@ export default function Home({ products }: any) {
         ]}
         url="https://paintigo.shop/"
       />
-    
+
       <HeroSlider
         data={HomePage}
         variantRounded="default"
