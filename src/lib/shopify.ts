@@ -308,7 +308,7 @@ export async function getAllBlogs() {
       articles(first:5) {
         edges {
           node {
-
+            excerpt
             contentHtml
             handle
             id

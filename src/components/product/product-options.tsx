@@ -7,7 +7,7 @@ export default function ProductOptions({
   setOptions,
 }:any) {
   return (
-    <fieldset className='mt-3'>
+    <fieldset className='mt-3 mb-10'>
       <legend className='text-xl font-semibold '>{name}</legend>
       <div className='inline-flex items-center flex-wrap'>
         {values.map((value:any) => {
