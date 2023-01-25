@@ -31,7 +31,7 @@ const ProductCard = ({ product }: any) => {
         <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
         <p className="mt-1 text-sm text-gray-700">{formatter.format(price)}</p>
       </div> */}
-      <div className="group">
+      <div className="group cursor-pointer">
         <div className="w-full max-w-sm bg-white border border-gray-300 rounded-lg shadow-listProduct xl:border-gray-200">
           <img className="p-3 rounded-t-lg" src={originalSrc} alt={title} />
           {/* <Image
