@@ -43,7 +43,7 @@ const ProductCard = ({ product }: any) => {
           /> */}
         </a>
         <div className="px-5 pb-5">
-          <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="text-xl font-semibold tracking-tight text-gray-900 ">
             {title}{" "}
           </h5>
           <div className="flex items-center mt-2.5 mb-5">
