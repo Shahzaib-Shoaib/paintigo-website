@@ -31,17 +31,15 @@ const ProductCard = ({ product }: any) => {
         <p className="mt-1 text-sm text-gray-700">{formatter.format(price)}</p>
       </div> */}
 
-      <div className="w-full max-w-sm bg-white border border-gray-300 rounded-lg shadow">
-        <a href="#">
-          <img className="p-3 rounded-t-lg" src={originalSrc} alt={title} />
-          {/* <Image
+      <div className="w-full max-w-sm bg-white border border-gray-300 rounded-lg shadow xl:border-gray-200">
+        <img className="p-3 rounded-t-lg" src={originalSrc} alt={title} />
+        {/* <Image
             priority={true}
             src={originalSrc}
             alt={title}
             layout="fill"
             objectFit="cover"
           /> */}
-        </a>
         <div className="px-5 pb-5">
           <h5 className="text-xl font-semibold tracking-tight text-gray-900 ">
             {title}{" "}
