@@ -93,6 +93,12 @@ export default function ProductForm({ product }: any) {
       >
         Add To Cart
       </button>
+      <button className="bg-black rounded-lg text-white px-2 py-3 mt-3 hover:bg-gray-800">
+        <a href="https://www.amazon.co.uk/PAINTIGO-Acrylic-Painting-Ceramic-Supplies/dp/B09S2JQMJZ?maas=maas_adg_D02BC4919C61519E3F13F81C3D243AAB_afap_abs&ref_=aa_maas&tag=maas">
+          {" "}
+          Buy from Amazon{" "}
+        </a>
+      </button>
     </div>
   );
 }
