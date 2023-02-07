@@ -52,7 +52,7 @@ export default function ProductForm({ product }: any) {
   }
 
   return (
-    <div className="rounded-2xl p-4  flex flex-col w-full md:w-1/3">
+    <div className="rounded-2xl p-4  flex flex-col w-full md:w-1/3 shadow-product">
       <h2 className="text-2xl font-bold font-razor">{product.title}</h2>
       <div className="flex flex-row my-3">
         {" "}

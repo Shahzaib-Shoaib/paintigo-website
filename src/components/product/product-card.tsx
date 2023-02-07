@@ -42,10 +42,10 @@ const ProductCard = ({ product }: any) => {
             objectFit="cover"
           /> */}
           <div className="px-5 pb-5">
-            <h5 className="text-xl font-semibold tracking-tight text-gray-900 ">
+            <h5 className="text-xl font-semibold tracking-tight text-gray-900 mb-5 ">
               {title}{" "}
             </h5>
-            <div className="flex items-center mt-2.5 mb-5">
+            {/* <div className="flex items-center mt-2.5 mb-5">
               <svg
                 aria-hidden="true"
                 className="w-5 h-5 text-yellow-300"
@@ -99,7 +99,7 @@ const ProductCard = ({ product }: any) => {
               <span className="bg-[#262626] text-white text-xs font-semibold mr-2 ml-2 px-2.5 py-0.5 rounded ">
                 5.0
               </span>
-            </div>
+            </div> */}
             <div className="flex items-center justify-between">
               <span className="text-2xl font-bold text-gray-900">
                 {formatter.format(price)}{" "}
