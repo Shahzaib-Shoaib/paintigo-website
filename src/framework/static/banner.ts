@@ -6,7 +6,7 @@ export const HomePage = [
       slug: '',
       image: {
         mobile: {
-          url: '/assets/images/banner/mobile-1.jpg',
+          url: '/assets/images/banner/mobile-1.png',
           width: 375,
           height: 220,
         },
@@ -23,7 +23,7 @@ export const HomePage = [
       slug: '',
       image: {
         mobile: {
-          url: '/assets/images/banner/mobile-2.png',
+          url: '/assets/images/banner/mobile-2.jpg',
           width: 375,
           height: 220,
         },
