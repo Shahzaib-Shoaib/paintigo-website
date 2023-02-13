@@ -7,8 +7,9 @@ import { useState } from "react";
 
 export default function ProductPageContent({ product }: any) {
   const images: any = [];
-  const [thumbsSwiper, setThumbsSwiper] = useState();
+  // const [thumbsSwiper, setThumbsSwiper] = useState();
 
+  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   product.images.edges.map((image: any, i: any) => {
     images.push(
