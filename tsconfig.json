@@ -26,7 +26,10 @@
       "@lib/*": ["src/lib/*"],
       "@styles/*": ["src/styles/*"],
       "@utils/*": ["src/utils/*"],
-      "@settings/*": ["src/settings/*"]
+      "@settings/*": ["src/settings/*"],
+      "@assets/*": [
+        "src/assets/*"
+      ]
     },
     "incremental": true
   },
