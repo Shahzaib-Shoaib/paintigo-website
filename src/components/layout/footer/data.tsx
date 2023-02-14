@@ -73,7 +73,7 @@ export const footer = {
         {
           id: 4,
           title: "link-phone",
-          path: "tel:+1 254 568-5479",
+          path: "tel:+ 44 20 8004 6776",
         },
       ],
     },

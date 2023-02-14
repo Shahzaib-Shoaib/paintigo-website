@@ -20,7 +20,7 @@ const data = [
   },
   {
     id: 3,
-    slug: "tel:+1 254 568-5479",
+    slug: "tel:+ 44 20 8004 6776",
     icon: <IoCallSharp />,
     name: "text-phone",
     description: "text-phone-details",
@@ -56,7 +56,7 @@ const ContactInfoBlock: FC<Props> = () => {
         <iframe
           width="100%"
           height="300"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=greenford+(Paintigo)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Vista Centre, 50 Salisbury Road, Hounslow, TW4 6JQ+(Paintigo)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         >
           <a href="https://www.maps.ie/distance-area-calculator.html">
           </a>
