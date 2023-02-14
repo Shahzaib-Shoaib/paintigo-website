@@ -1,44 +1,71 @@
- <div>
-      <div className="flex flex-col justify-center items-center space-y-8 md:flex-row md:items-start md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
-        <div className="w-full max-w-md border bg-white rounded-2xl overflow-hidden shadow-lg md:w-1/2">
-          {/* <div className="relative h-96 w-full">
-            <Swiper
-              navigation
-              // pagination={{ clickable: true }}
-              className="h-96 rounded-2xl text-[#262626]"
+import Image from "next/legacy/image";
+import ProductForm from "./product-form";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, FreeMode, Thumbs } from "swiper";
+import RecommendedList from "./recommended-list";
+import { useState } from "react";
+
+export default function ProductPageContent({ product }: any) {
+  const images: any = [];
+
+  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+
+  product.images.edges.map((image: any, i: any) => {
+    images.push(
+      <SwiperSlide key={`slide-${i}`}>
+       <Image
+          src={image.node.originalSrc}
+          alt={image.node.altText}
+          // layout="fill"
+          // objectFit="contain"
+          width={600}
+          height={600}
+        />
+      </SwiperSlide>
+    );
+  });
+
+  SwiperCore.use([Navigation, Pagination]);
+
+  return (
+    <div>
+      <div className="flex flex-col items-center space-y-8 md:flex-row md:items-start md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
+        <div className="w-full max-w-xl border bg-white rounded-2xl overflow-hidden shadow-lg md:w-1/2">
+          <Swiper
               loop={true}
+              spaceBetween={10}
+              navigation={true}
+              thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
+
+              modules={[FreeMode, Navigation, Thumbs]}
+              className="mb-2 rounded"
             >
               {images}
             </Swiper>
-          </div> */}
-          <div className="col-span-5 xl:col-span-5 overflow-hidden mb-6 md:mb-8 lg:mb-0">
-            {!!product?.images?.edges?.length ? (
-              <ThumbnailCarousel
-                gallery={product?.images?.edges}
-                thumbnailClassName="xl:w-[700px] 2xl:w-[850px]"
-                galleryClassName="xl:w-[100px] 2xl:w-[120px]"
-              />
-            ) : (
-              // <div className="w-auto flex items-center justify-center">
-              //   <Image
-              //     src={data?.image?.original ?? "/product-placeholder.svg"}
-              //     alt={data?.name!}
-              //     width={900}
-              //     height={680}
-              //   />
-              // </div>
-              <></>
-            )}
-          </div>
+            <Swiper
+              onSwiper={setThumbsSwiper}
+              loop={true}
+              spaceBetween={10}
+              slidesPerView={4}
+              freeMode={true}
+              watchSlidesProgress={true}
+              modules={[FreeMode, Navigation, Thumbs]}
+              className=" "
+            >
+              {" "}
+              {images}
+            </Swiper>
         </div>
         <ProductForm product={product} />
       </div>
 
-      <div className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-11/12 mx-auto">
+      <div className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
+        <h2 className=" text-2xl text-[#262626] font-semibold">Product Description:</h2>
         <div
           className=""
           dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
         />
+
       </div>
 
       <RecommendedList
@@ -46,152 +73,118 @@
         products={product.collections.edges[0].node.products.edges}
       />
     </div>
-
-
-    ////////////////////////////////////////////////////////////////////////
-
-
-
-
-import {
-  Swiper,
-  SwiperSlide,
-  SwiperOptions,
-  Navigation,
-  Thumbs,
-} from "./slider";
-import Image from "next/image";
-import { useRef, useState } from "react";
-import cn from "classnames";
-import { getDirection } from "@utils/get-direction";
-import { useRouter } from "next/router";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { productGalleryPlaceholder } from '@assets/placeholders';
-
-interface Props {
-  gallery: any[];
-  thumbnailClassName?: string;
-  galleryClassName?: string;
+  );
 }
 
-// product gallery breakpoints
-const galleryCarouselBreakpoints = {
-  1280: {
-    slidesPerView: 4,
-    direction: "vertical",
-  },
-  0: {
-    slidesPerView: 3,
-  },
-};
 
-const swiperParams: SwiperOptions = {
-  slidesPerView: 1,
-  spaceBetween: 0,
-};
+# ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const ThumbnailCarousel: React.FC<Props> = ({
-  gallery,
-  thumbnailClassName = "xl:w-[480px] 2xl:w-[650px]",
-  galleryClassName = "xl:w-[100px] 2xl:w-[120px]",
-}) => {
-  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
-  const prevRef = useRef<HTMLDivElement>(null);
-  const nextRef = useRef<HTMLDivElement>(null);
-  const { locale } = useRouter();
-  const dir = getDirection(locale);
+
+
+import { useState, useContext } from "react";
+import { formatter } from "@utils/helper";
+import ProductOptions from "./product-options";
+import { CartContext } from "@contexts/shopContext";
+import { FaFacebook, FaPinterest, FaTwitter } from "react-icons/fa";
+
+export default function ProductForm({ product }: any) {
+  const { addToCart }: any = useContext(CartContext);
+
+  const allVariantOptions = product.variants.edges?.map((variant: any) => {
+    const allOptions: any = {};
+
+    variant.node.selectedOptions.map((item: any) => {
+      allOptions[item.name] = item.value;
+    });
+
+    return {
+      id: variant.node.id,
+      title: product.title,
+      handle: product.handle,
+      image: variant.node.image?.originalSrc,
+      options: allOptions,
+      variantTitle: variant.node.title,
+      variantPrice: variant.node.priceV2.amount,
+      variantQuantity: 1,
+    };
+  });
+
+  const defaultValues: any = {};
+  product.options.map((item: any) => {
+    defaultValues[item.name] = item.values[0];
+  });
+
+  const [selectedVariant, setSelectedVariant] = useState(allVariantOptions[0]);
+  const [selectedOptions, setSelectedOptions] = useState(defaultValues);
+
+  function setOptions(name: any, value: any) {
+    setSelectedOptions((prevState: any) => {
+      return { ...prevState, [name]: value };
+    });
+
+    const selection = {
+      ...selectedOptions,
+      [name]: value,
+    };
+
+    allVariantOptions.map((item: any) => {
+      if (JSON.stringify(item.options) === JSON.stringify(selection)) {
+        setSelectedVariant(item);
+      }
+    });
+  }
+
   return (
-    <div className="w-full xl:flex xl:flex-row-reverse">
-      <div
-        className={cn(
-          "w-full flex items-center xl:ms-5 overflow-hidden rounded-md relative",
-          thumbnailClassName
-        )}
-      >
-        <Swiper
-          id="productGallery"
-          // thumbs={{ swiper: thumbsSwiper }}
-          thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
-
-          modules={[Navigation, Thumbs]}
-          navigation={{
-            prevEl: prevRef.current!, // Assert non-null
-            nextEl: nextRef.current!, // Assert non-null
-          }}
-          {...swiperParams}
-        >
-          {gallery?.map((item: any) => (
-            <SwiperSlide
-              key={`product-gallery-${item?.node?.altText}`}
-              className="flex items-center justify-center"
-            >
-              <Image
-                src={item?.node?.originalSrc ?? productGalleryPlaceholder}
-                alt={`Product gallery ${item?.node?.altText}`}
-                width={650}
-                height={590}
-                className="rounded-lg"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <div className="flex items-center justify-between w-full absolute top-2/4 z-10 px-2.5">
-          <div
-            ref={prevRef}
-            className="w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 text-base lg:text-lg xl:text-xl flex items-center cursor-pointer justify-center rounded-full bg-skin-fill transition duration-300 hover:bg-skin-primary hover:text-skin-inverted focus:outline-none transform -translate-y-1/2 shadow-navigation"
+    <div className="flex flex-col w-[36rem] ml-6">
+      <div className="">
+        <h2 className="text-3xl font-normal font-razor mt-2">{product.title}</h2>
+        <div className="flex flex-row my-7">
+          {" "}
+          <a
+            href={`//www.facebook.com/sharer.php?u=https://paintigo.shop/products/${product.handle}`}
           >
-            {dir === "rtl" ? <IoIosArrowForward /> : <IoIosArrowBack />}
-          </div>
-          <div
-            ref={nextRef}
-            className="w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 text-base lg:text-lg xl:text-xl flex items-center justify-center cursor-pointer rounded-full bg-skin-fill  transition duration-300 hover:bg-skin-primary hover:text-skin-inverted focus:outline-none transform -translate-y-1/2 shadow-navigation"
+            <FaFacebook className="text-3xl text-blue-700 mr-2" />
+          </a>
+          <a
+            href={`//twitter.com/share?text=${product.title}&url=https://paintigo.shop/products/${product.handle}`}
           >
-            {dir === "rtl" ? <IoIosArrowBack /> : <IoIosArrowForward />}
-          </div>
+            <FaTwitter className="text-3xl text-blue-400 mx-2" />
+          </a>
+          <a
+            href={`//pinterest.com/pin/create/button/?url=https://paintigo.shop/products/${product.handle}&description=${product.title}`}
+          >
+            <FaPinterest className="text-3xl text-red-600 mx-2" />
+          </a>
         </div>
-      </div>
-      {/* End of product main slider */}
-
-      <div className={`flex-shrink-0 ${galleryClassName}`}>
-        <Swiper
-          id="productGalleryThumbs"
-          onSwiper={setThumbsSwiper}
-          spaceBetween={15}
-          watchSlidesProgress={true}
-          freeMode={true}
-          effect={"slide"}
-          breakpoints={{
-            1280: {
-              slidesPerView: 4,
-              direction: "vertical",
-            },
-            767: {
-              slidesPerView: 4,
-              direction: "horizontal",
-            },
-            0: {
-              slidesPerView: 3,
-              direction: "horizontal",
-            },
-          }}
-        >
-          {gallery?.map((item: any) => (
-            <SwiperSlide
-              key={`product-thumb-gallery-${item?.node?.altText}`}
-              className="flex items-center justify-center cursor-pointer rounded overflow-hidden border border-skin-base transition hover:opacity-75"
-            >
-              <Image
-                src={item?.node?.originalSrc ?? productGalleryPlaceholder}
-                alt={`Product thumb gallery ${item?.node?.altText}`}
-                width={170}
-                height={170}
-              />
-             </SwiperSlide>
-          ))}
-        </Swiper>
+        <span className=" my-7 text-xl font-semibold">
+          {formatter.format(product.variants.edges[0].node.priceV2.amount)}
+        </span>
+        {product.options.map(({ name, values }: any) => (
+          <ProductOptions
+            key={`key-${name}`}
+            name={name}
+            values={values}
+            selectedOptions={selectedOptions}
+            setOptions={setOptions}
+          />
+        ))}
+        <div className="flex flex-col my-14">
+          <button
+            onClick={() => {
+              addToCart(selectedVariant);
+            }}
+            className="bg-black rounded-lg text-white px-2 py-3 mt-3 hover:bg-gray-800"
+          >
+            Add To Cart
+          </button>
+          <button className="bg-black rounded-lg text-white px-2 py-3 mt-[14px] hover:bg-gray-800 ">
+            <a href="https://www.amazon.co.uk/PAINTIGO-Acrylic-Painting-Ceramic-Supplies/dp/B09S2JQMJZ?maas=maas_adg_D02BC4919C61519E3F13F81C3D243AAB_afap_abs&ref_=aa_maas&tag=maas">
+              {" "}
+              Buy from Amazon{" "}
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   );
-};
-
-export default ThumbnailCarousel;
+}

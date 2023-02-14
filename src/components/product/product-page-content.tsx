@@ -7,7 +7,6 @@ import { useState } from "react";
 
 export default function ProductPageContent({ product }: any) {
   const images: any = [];
-  // const [thumbsSwiper, setThumbsSwiper] = useState();
 
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
@@ -30,8 +29,8 @@ export default function ProductPageContent({ product }: any) {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center space-y-8 md:flex-row md:items-start md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
-        <div className="w-full max-w-md border bg-white rounded-2xl overflow-hidden shadow-lg md:w-1/2">
+      <div className="flex flex-col items-center space-y-8 md:flex-row md:items-start md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
+        <div className="w-full max-w-xl border bg-white rounded-2xl overflow-hidden shadow-lg md:w-1/2">
           <Swiper
               loop={true}
               spaceBetween={10}
@@ -60,7 +59,8 @@ export default function ProductPageContent({ product }: any) {
         <ProductForm product={product} />
       </div>
 
-      <div className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-11/12 mx-auto">
+      <div className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
+        <h2 className=" text-2xl text-[#262626] font-semibold">Product Description:</h2>
         <div
           className=""
           dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
