@@ -34,7 +34,7 @@ export default function Home({ products }: any) {
 
     setTimeout(() => {
       openModal();
-    }, 1000);
+    }, 2000);
   }, []);
   return (
     <>
