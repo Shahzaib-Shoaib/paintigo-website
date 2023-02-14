@@ -30,7 +30,7 @@ export default function ProductPageContent({ product }: any) {
   return (
     <div>
       <div className="flex flex-col items-center space-y-8 md:flex-row md:items-start md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
-        <div className="w-full max-w-xl border bg-white rounded-2xl overflow-hidden shadow-lg md:w-1/2">
+        <div className="w-full max-w-xl border bg-white rounded-xl overflow-hidden shadow-lg md:w-1/2">
           <Swiper
               loop={true}
               spaceBetween={10}

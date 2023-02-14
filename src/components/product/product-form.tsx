@@ -52,7 +52,7 @@ export default function ProductForm({ product }: any) {
   }
 
   return (
-    <div className="flex flex-col md:w-[36rem] ml-6 sm:w-full ">
+    <div className="flex flex-col md:ml-6 sm:w-full md:w-[36rem] ">
       <div className="">
         <h2 className="text-3xl font-normal font-razor mt-2">{product.title}</h2>
         <div className="flex flex-row my-7">
