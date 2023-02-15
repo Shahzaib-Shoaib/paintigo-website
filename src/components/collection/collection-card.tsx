@@ -4,7 +4,6 @@ import { ROUTES } from "@utils/routes";
 
 
 const CollectionCard = ({ collection }: any) => {
-    console.log(collection);
     
   const { handle, title } = collection.node;
 
