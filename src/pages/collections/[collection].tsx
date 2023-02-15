@@ -9,9 +9,9 @@ import {
   getProductsOfSpecificCollection,
 } from "@lib/shopify";
 import ProductList from "@components/product/product-list";
+import { NextSeo } from "next-seo";
 
 export default function CollectionPage({ collection }: any) {
-
   return (
     <>
       <div className="min-h-screen py-12 sm:pt-20">

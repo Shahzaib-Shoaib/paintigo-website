@@ -414,6 +414,7 @@ export async function getProductsOfSpecificCollection(handle: string, locale) {
    
     collectionByHandle(handle: "${handle}") {
       title
+      handle
       products(first: 25) {
         edges {
           node {
@@ -442,9 +443,7 @@ export async function getProductsOfSpecificCollection(handle: string, locale) {
   `;
 
   const response = await ShopifyData(query);
-  console.log(query);
 
-  console.log(response);
 
   const allProductsOfSpecificCollection = response.data.collectionByHandle
     .products.edges

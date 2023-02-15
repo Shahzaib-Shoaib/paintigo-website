@@ -15,7 +15,10 @@ export default function Collections({ collections }: any) {
 
   return (
     <>
-      <NextSeo title="Paintigo Collections" />
+      <NextSeo
+        title="Paintigo Collections"
+        description="Looking for high-quality acrylic paint pens? Browse our collection and discover a wide range of vibrant colors and versatile tips. Perfect for art projects, DIY crafts, and more, our acrylic paint pens are easy to use and provide long-lasting results on a variety of surfaces. Shop now and take your creativity to the next level!"
+      />
       {/* <ProductList products={products} /> */}
       <CollectionList collections={collections} />
       <Container>
