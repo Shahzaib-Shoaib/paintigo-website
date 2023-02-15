@@ -59,9 +59,9 @@ export default function ProductPageContent({ product }: any) {
             modules={[FreeMode, Navigation, Thumbs]}
             className="mb-2 "
           >
-            <div className={`absolute top-1 pe-5 z-10`}>
+            <div className={`absolute top-1  z-10 right-6`}>
               <button type="button" onClick={() => setIsOpen(true)}>
-                <IoExpandOutline className="text-3xl text-black font-bold" />
+                <IoExpandOutline className="text-3xl text-[#262626] font-bold" />
               </button>
 
               {isOpen && (
