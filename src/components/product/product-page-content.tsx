@@ -98,7 +98,6 @@ export default function ProductPageContent({ product }: any) {
         </div>
         <ProductForm product={product} />
       </div>
-
       <div className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
         <h2 className=" text-2xl text-[#262626] font-semibold">
           Product Description:
@@ -108,6 +107,9 @@ export default function ProductPageContent({ product }: any) {
           dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
         />
       </div>
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+      <div className="elfsight-app-13f6e1a9-ea6e-4cbd-bc3f-981a815ecbbb"></div>
 
       <RecommendedList
         current={product.id}
