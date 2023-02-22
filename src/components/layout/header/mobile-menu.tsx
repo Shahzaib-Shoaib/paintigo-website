@@ -40,7 +40,7 @@ const social = [
 	},
 	{
 		id: 3,
-		link: "https://www.instagram.com/paintigoshop/",
+		link: "https://www.instagram.com/paintigoworld/",
 		icon: <IoLogoInstagram />,
 		className: "instagram",
 		title: "text-instagram",

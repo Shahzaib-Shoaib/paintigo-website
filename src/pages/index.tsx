@@ -102,7 +102,7 @@ export default function Home({ products }: any) {
         sameAs={[
           "https://www.facebook.com/PaintigoGlobal",
           "https://twitter.com/paintigo",
-          "https://www.instagram.com/paintigoshop/?hl=en",
+          "https://www.instagram.com/paintigoworld/?hl=en",
           "https://www.youtube.com/@paintigo9457",
           "https://www.pinterest.com/paintigoshop/",
         ]}

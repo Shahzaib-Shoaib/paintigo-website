@@ -16,7 +16,7 @@ export const footer = {
         {
           id: 1,
           title: "link-instagram",
-          path: "https://www.instagram.com/paintigoshop/",
+          path: "https://www.instagram.com/paintigoworld/",
           icon: <IoLogoInstagram />,
         },
         {

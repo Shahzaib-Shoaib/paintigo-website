@@ -13,7 +13,7 @@ const socialmediaFeed = [
   {
     id: 1,
     title: "text-instagram",
-    slug: "https://www.instagram.com/paintigoshop/",
+    slug: "https://www.instagram.com/paintigoworld/",
     image: "/assets/images/social/262626.jpg",
     icon: (
       <FaInstagram className="text-white text-base sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl transform opacity-0 scale-400 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100" />
